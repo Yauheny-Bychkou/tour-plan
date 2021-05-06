@@ -1,8 +1,11 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,IAAI;CAAG",
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CAAG;;AAC3B,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,oBAAoB;CAAG;;AEHtC,AAAA,OAAO,CAAC;EACN,gBAAgB,EAAE,KAAK;CAAG",
     "sources": [
-        "../sass/style.sass"
+        "../sass/style.sass",
+        "../sass/_settings.sass",
+        "../sass/_variables.sass",
+        "../sass/blocks/_navbar.sass"
     ],
     "names": [],
     "file": "style.css"

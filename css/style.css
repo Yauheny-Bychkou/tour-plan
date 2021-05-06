@@ -1,4 +1,13 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
-  background-color: #fff;
+  font-family: 'Mulish', sans-serif;
+}
+
+.navbar {
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */
