@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Mulish', sans-serif;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -524,26 +525,30 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+.hotel-wrapper__stars {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .hotel-wrapper__name {
-  margin-top: 5px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .hotel-wrapper__offer {
+  font-size: 10px;
+  line-height: 13px;
   padding: 4px 9px;
-  margin-left: 14px;
   background-color: #EC1F46;
   color: #fff;
   border-radius: 3px;
-  font-size: 10px;
-  line-height: 12px;
+  margin-left: 14px;
 }
 
 .hotel-name {
@@ -557,11 +562,6 @@ template {
   font-size: 12px;
   line-height: 15px;
   margin: 0;
-}
-
-.stars {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
 }
 
 .raiting {
@@ -580,8 +580,14 @@ template {
 }
 
 .raiting__counter {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.raiting__small {
   font-size: 10px;
   line-height: 12px;
+  margin: 0;
 }
 
 @media (max-width: 1200px) {
@@ -660,16 +666,16 @@ template {
             order: -1;
     margin-left: 0;
   }
+  .hotel-wrapper__stars {
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+  }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
   .hotel-description {
-    max-width: 50%;
-  }
-  .stars {
-    -ms-flex-preferred-size: content;
-        flex-basis: content;
+    max-width: 280px;
   }
   .raiting {
     display: none;
@@ -679,6 +685,31 @@ template {
 @media (max-width: 576px) {
   .logo {
     max-width: 99px;
+  }
+  .hotel-wrapper__stars {
+    -ms-flex-preferred-size: 12%;
+        flex-basis: 12%;
+  }
+}
+
+@media (max-width: 420px) {
+  .hotel-wrapper__stars {
+    -ms-flex-preferred-size: 14%;
+        flex-basis: 14%;
+  }
+}
+
+@media (max-width: 363px) {
+  .hotel-wrapper__stars {
+    -ms-flex-preferred-size: 16%;
+        flex-basis: 16%;
+  }
+}
+
+@media (max-width: 320px) {
+  .hotel-wrapper__stars {
+    -ms-flex-preferred-size: 18%;
+        flex-basis: 18%;
   }
 }
 /*# sourceMappingURL=style.css.map */

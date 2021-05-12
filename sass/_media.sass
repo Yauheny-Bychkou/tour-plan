@@ -48,16 +48,34 @@
       &__offer
         order: -1
         margin-left: 0
+      &__stars
+        flex-basis: 10%
     &-name
       flex-basis: 100%
     &-description
-      max-width: 50%
-  .stars
-    flex-basis: content
+      max-width: 280px
   .raiting
     display: none
 @media (max-width: 576px)
   .logo
     max-width: 99px
-  
+  .hotel
+    &-wrapper
+      &__stars
+        flex-basis: 12%
+@media (max-width: 420px)
+  .hotel
+    &-wrapper
+      &__stars
+        flex-basis: 14%
+@media (max-width: 363px)
+  .hotel
+    &-wrapper
+      &__stars
+        flex-basis: 16%
+@media (max-width: 320px)
+  .hotel
+    &-wrapper
+      &__stars
+        flex-basis: 18%
     
