@@ -476,6 +476,114 @@ template {
   margin-left: 18px;
 }
 
+.breadcrumb-list {
+  margin: 0;
+  padding: 19px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.breadcrumb-list__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcrumb-list__item:not(:last-child)::after {
+  content: '/';
+  margin-right: 4px;
+}
+
+.breadcrumb-list__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hotel {
+  padding-top: 24px;
+  padding-bottom: 70px;
+}
+
+.hotel-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-wrapper__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hotel-wrapper__name {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.hotel-wrapper__offer {
+  padding: 4px 9px;
+  margin-left: 14px;
+  background-color: #EC1F46;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.hotel-name {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.hotel-description {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+}
+
+.stars {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.raiting {
+  max-width: 65px;
+  min-height: 45px;
+  text-align: center;
+  background-color: #EC1F46;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.raiting__text {
+  font-size: 8px;
+  line-height: 10px;
+  margin-bottom: 2px;
+}
+
+.raiting__counter {
+  font-size: 10px;
+  line-height: 12px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -537,6 +645,34 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .hotel-wrapper__left {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hotel-wrapper__name {
+    margin-top: 10px;
+  }
+  .hotel-wrapper__offer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-left: 0;
+  }
+  .hotel-name {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .hotel-description {
+    max-width: 50%;
+  }
+  .stars {
+    -ms-flex-preferred-size: content;
+        flex-basis: content;
+  }
+  .raiting {
+    display: none;
   }
 }
 
