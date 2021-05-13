@@ -565,6 +565,15 @@ template {
   padding-bottom: 20px;
 }
 
+.hotel-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .raiting {
   max-width: 65px;
   min-height: 45px;
@@ -640,6 +649,129 @@ template {
 .slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+}
+
+.booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking__view {
+  width: 350px;
+  min-height: 210px;
+  padding: 28px;
+  background-color: #0A223D;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.booking__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking__top {
+  font-style: normal;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.booking__middle {
+  display: block;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.booking__bottom {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.booking__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking__up {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.booking__text-guest {
+  margin-left: 9px;
+}
+
+.booking__text-room {
+  margin-left: 15px;
+}
+
+.booking__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 9px;
+  margin-bottom: 17px;
+}
+
+.booking__quick {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.booking__tel {
+  text-decoration: none;
+  color: inherit;
+}
+
+.booking__number {
+  margin-left: 8px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.booking__button {
+  width: 100%;
+  background-color: #EC1F46;
+  color: #fff;
+  border: none;
+  padding: 13px 0;
+  border-radius: 4px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.map {
+  max-width: 347px;
+  min-height: 213px;
+  background-color: black;
+  border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
