@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Best tour plan - Hotel Booking</title>
   </head>
@@ -53,8 +54,8 @@
       </nav>
     </header>
     <!-- /.navbar -->
-    <div class="container">
-      <nav class="breadcrumb">
+    <nav class="breadcrumb">
+      <div class="container">
         <ul class="breadcrumb-list">
           <li class="breadcrumb-list__item">
             <a href="#" class="breadcrumb-list__link">Home</a>
@@ -62,12 +63,12 @@
           <li class="breadcrumb-list__item">
             <a href="#" class="breadcrumb-list__link">Flash Offers</a>
           </li>
-          <li class="breadcrumb-list__item">GRAND HILTON HOTEL</li>
+          <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
         </ul>
-      </nav>
-      <!-- /.breadcrumb -->
-    </div>
-    <!-- /.container -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- /.breadcrumb -->
     <section class="hotel">
       <div class="container">
         <div class="hotel-wrapper">
@@ -91,9 +92,37 @@
           <!-- /.user -->
         </div>
         <!-- /.hotel-wrapper -->
+        <div class="hotel-grid">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img class="swiper-container__swipe" src="img/slide.jpg" alt="slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-container__swipe" src="img/slide-2.jpg" alt="slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-container__swipe" src="img/slide-3.jpg" alt="slide" />
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button--prev"></button>
+              <button class="slider-button slider-button--next"></button>
+            </div>
+            <!-- /.swiper-container -->
+          </div>
+          <!-- /.slider -->
+        </div>
+        <!-- /.hotel-grid -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
