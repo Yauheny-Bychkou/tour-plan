@@ -10,6 +10,7 @@ const swiper = new Swiper(".swiper-container", {
     enabled: true,
     onlyInViewport: true,
   },
+  spaceBetween: 20,
 });
 ymaps.ready(init);
 function init() {

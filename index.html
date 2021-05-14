@@ -108,10 +108,34 @@
                 <div class="swiper-slide">
                   <img class="swiper-container__swipe" src="img/slide-3.jpg" alt="slide" />
                 </div>
+                <div class="swiper-slide">
+                  <img class="swiper-container__swipe" src="img/slide-4.jpg" alt="slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-container__swipe" src="img/slide-5.jpg" alt="slide" />
+                </div>
               </div>
               <!-- If we need navigation buttons -->
-              <button class="slider-button slider-button--prev"></button>
-              <button class="slider-button slider-button--next"></button>
+              <button class="slider-button slider-button--prev">
+                <svg class="slider-button__svg" width="10" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.263.616c.47.488.47 1.28 0 1.768L2.902 9l6.361 6.616c.47.488.47 1.28 0 1.768a1.17 1.17 0 01-1.7 0l-7.211-7.5a1.286 1.286 0 010-1.768l7.212-7.5a1.17 1.17 0 011.7 0z"
+                    fill-opacity=".8"
+                  />
+                </svg>
+              </button>
+              <button class="slider-button slider-button--next">
+                <svg class="slider-button__svg" width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M.814.616a1.17 1.17 0 011.7 0l7.211 7.5c.47.488.47 1.28 0 1.768l-7.212 7.5a1.17 1.17 0 01-1.7 0 1.286 1.286 0 010-1.768L7.176 9 .814 2.384a1.286 1.286 0 010-1.768z"
+                    fill-opacity=".8"
+                  />
+                </svg>
+              </button>
             </div>
             <!-- /.swiper-container -->
           </div>
@@ -152,6 +176,18 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <section class="newsletter">
+      <div class="newsletter-wrapper">
+        <h2 class="newsletter-title">
+          subscribe to our
+          <span class="newsletter-title__strong"> Newsletter</span>
+        </h2>
+        <form action="#" class="subscribe newsletter__subscribe">
+          <input type="text" class="subscribe__input" placeholder="Your email address" />
+          <button class="subscribe__button"></button>
+        </form>
+      </div>
+    </section>
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=44101698-031b-4149-becf-160313e26f63&lang=ru_RU"
       type="text/javascript"

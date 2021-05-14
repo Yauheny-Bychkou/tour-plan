@@ -601,24 +601,9 @@ template {
 }
 
 .swiper-container {
-  position: relative;
   width: 100%;
   height: 450px;
   border-radius: 8px;
-}
-
-.swiper-container::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  z-index: 10;
 }
 
 .slider {
@@ -643,12 +628,38 @@ template {
 
 .slider-button--next {
   right: 18px;
-  background-image: url(../img/arrow-next.svg);
 }
 
 .slider-button--prev {
   left: 18px;
-  background-image: url(../img/arrow-prev.svg);
+}
+
+.slider-button__svg {
+  fill: #fff;
+}
+
+.swiper-slide {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.swiper-slide::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 10;
+}
+
+.swiper-container__swipe {
+  border-radius: 8px;
 }
 
 .booking {
@@ -772,6 +783,11 @@ template {
   height: 213px;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.newsletter {
+  padding: 98px 0 87px 0;
+  background-image: url(../img/newsletter-bg.jpg);
 }
 
 @media (max-width: 1200px) {
