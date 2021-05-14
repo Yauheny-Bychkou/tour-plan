@@ -23,6 +23,8 @@
   .logo
     width: 132px
 @media (max-width: 991px)
+  .container, .newsletter-wrapper
+    max-width: 731px
   .hotel
     &__slider
       margin-bottom: 30px
@@ -95,6 +97,11 @@
   .map
     width: 265px
     height: 210px
+  .newsletter
+    &-wrapper
+      flex-direction: column
+      align-items: flex-start
+      max-width: 576px
 @media (max-width: 576px)
   .container
     max-width: 513px
@@ -118,6 +125,14 @@
       margin-bottom: 20px
       height: 210px
   .map
+    width: 100%
+  .newsletter
+    padding: 76px 20px 83px 20px
+    &-wrapper
+      max-width: 513px
+    &__title
+      margin-bottom: 37px
+  .subscribe
     width: 100%
 @media (max-width: 420px)
   .hotel
@@ -151,8 +166,8 @@
       display: initial
       position: absolute
       top: 200px
-      left: 38px
-      right: 38px
+      left: 30px
+      right: 30px
       width: 243px
       height: 40px
     &-menu
@@ -166,8 +181,7 @@
       width: 100%
       &__link
         padding: 0
-        margin-bottom: 20px
-        
+        margin-bottom: 20px 
   .user
     &__name
       color: $light
@@ -190,4 +204,6 @@
   .slider
     display: none
   .map
+    display: none
+  .newsletter
     display: none
