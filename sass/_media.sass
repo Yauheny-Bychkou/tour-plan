@@ -1,9 +1,13 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-@media (max-width: 991px)
-  .container
-    max-width: 760px
+  .slider
+    max-width: 600px
+  .booking  
+    &__view
+      width: 288px
+  .map
+    width: 288px
   .navbar
     &-top
       padding-top: 30px
@@ -18,6 +22,25 @@
         line-height: 15px
   .logo
     width: 132px
+@media (max-width: 991px)
+  .hotel
+    &__slider
+      margin-bottom: 30px
+  .container
+    max-width: 761px
+  .hotel-grid
+    flex-direction: column
+  .slider
+    max-width: 731px
+  .swiper-container
+    &::after
+      max-width: 731px
+  .booking
+    flex-direction: row
+    &__view
+      width: 340px
+  .map
+    width: 340px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -54,28 +77,117 @@
       flex-basis: 100%
     &-description
       max-width: 280px
+    &__slider
+      width: 250px
   .raiting
     display: none
+  .slider
+    width: 100%
+  .swiper-container
+    height: 250px 
+    &__swipe
+      height: 250px
+      width: 100%
+  .booking
+    &__view
+      width: 265px
+      height: 210px
+  .map
+    width: 265px
+    height: 210px
 @media (max-width: 576px)
+  .container
+    max-width: 513px
   .logo
     max-width: 99px
   .hotel
     &-wrapper
       &__stars
         flex-basis: 12%
+    &__slider
+      height: 200px
+  .swiper-container
+    height: 200px
+    &__swipe
+      height: 200px
+  .booking
+    width: 100%
+    flex-direction: column
+    &__view
+      width: 100%
+      margin-bottom: 20px
+      height: 210px
+  .map
+    width: 100%
 @media (max-width: 420px)
   .hotel
     &-wrapper
       &__stars
         flex-basis: 14%
+  .swiper-container
+      height: 179px
+      &__swipe
+        height: 179px
 @media (max-width: 363px)
   .hotel
     &-wrapper
       &__stars
         flex-basis: 16%
 @media (max-width: 320px)
+  body
+    background-color: $dark
+    position: relative
+  .navbar
+    &__user
+      display: initial
+      position: absolute
+      top: 107px
+      left: 140px
+      right: 140px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__search
+      display: initial
+      position: absolute
+      top: 200px
+      left: 38px
+      right: 38px
+      width: 243px
+      height: 40px
+    &-menu
+      display: initial
+      position: absolute
+      display: flex
+      flex-direction: column
+      align-items: center
+      top: 240px
+      right: 1px
+      width: 100%
+      &__link
+        padding: 0
+        margin-bottom: 20px
+        
+  .user
+    &__name
+      color: $light
+      margin-left: 0
+  .breadcrumb
+    display: none
   .hotel
     &-wrapper
       &__stars
-        flex-basis: 18%
-    
+        display: none
+      &__offer
+        display: none
+      &__name
+        display: none
+    &-description
+      display: none
+  .booking
+    &__view
+      display: none
+  .slider
+    display: none
+  .map
+    display: none
