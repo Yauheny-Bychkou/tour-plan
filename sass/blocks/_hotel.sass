@@ -21,6 +21,46 @@
       color: $light
       border-radius: 3px
       margin-left: 14px
+  &-slider
+   width: 728px
+   height: 450px
+   border-radius: 8px
+   &__item
+    position: relative
+    border-radius: 8px
+    overflow: hidden
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)  
+      z-index: 10
+   &__button
+    top: 50%
+    transform: translateY(-50%)
+    position: absolute
+    width: 30px
+    height: 30px
+    border: none
+    z-index: 99
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    background-color: transparent
+    padding: 0
+    &--next
+      right: 18px
+      padding: 0
+    &--prev
+      left: 18px
+    &__svg
+      fill: #fff 
   &-name
     font-size: 24px
     line-height: 30px
@@ -51,51 +91,6 @@
    font-size: 10px
    line-height: 12px
    margin: 0
-.swiper-container
-  width: 100% 
-  height: 450px
-  border-radius: 8px
-.slider
-  width: 728px
-  &-button
-    top: 50%
-    transform: translateY(-50%)
-    position: absolute
-    width: 30px
-    height: 30px
-    border: none
-    z-index: 99
-    cursor: pointer
-    background-repeat: no-repeat
-    background-position: center
-    background-size: 10px
-    background-color: transparent
-    padding: 0
-    &--next
-      right: 18px
-      padding: 0
-    &--prev
-      left: 18px
-    &__svg
-      fill: #fff 
-.swiper-slide
-  position: relative
-  border-radius: 8px
-  overflow: hidden
-  &::after
-    content: ''
-    position: absolute
-    width: 100%
-    height: 100%
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)  
-    z-index: 10
-.swiper-container
-  &__swipe
-    border-radius: 8px
 .booking
   display: flex
   flex-direction: column

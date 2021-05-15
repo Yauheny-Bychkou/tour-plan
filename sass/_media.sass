@@ -1,8 +1,9 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  .slider
-    max-width: 600px
+  .hotel
+    &-slider
+     max-width: 600px
   .booking  
     &__view
       width: 288px
@@ -16,7 +17,7 @@
       margin-left: auto
       max-width: 340px
     &-menu
-      padding: 22px 0
+      padding: 0
       &__link
         font-size: 12px
         line-height: 15px
@@ -26,14 +27,14 @@
   .container, .newsletter-wrapper
     max-width: 731px
   .hotel
+    &-slider
+      max-width: 731px
     &__slider
       margin-bottom: 30px
   .container
     max-width: 761px
   .hotel-grid
     flex-direction: column
-  .slider
-    max-width: 731px
   .swiper-container
     &::after
       max-width: 731px
@@ -65,6 +66,8 @@
         height: 1px
         background-color: $text-color
   .hotel
+    &-slider
+      width: 100%
     &-wrapper
       &__left
         justify-content: space-between
@@ -79,15 +82,11 @@
       flex-basis: 100%
     &-description
       max-width: 280px
-    &__slider
-      width: 250px
   .raiting
     display: none
-  .slider
-    width: 100%
   .swiper-container
     height: 250px 
-    &__swipe
+    &__image
       height: 250px
       width: 100%
   .booking
@@ -151,37 +150,6 @@
 @media (max-width: 320px)
   body
     background-color: $dark
-    position: relative
-  .navbar
-    &__user
-      display: initial
-      position: absolute
-      top: 107px
-      left: 140px
-      right: 140px
-      display: flex
-      flex-direction: column
-      align-items: center
-    &__search
-      display: initial
-      position: absolute
-      top: 200px
-      left: 30px
-      right: 30px
-      width: 243px
-      height: 40px
-    &-menu
-      display: initial
-      position: absolute
-      display: flex
-      flex-direction: column
-      align-items: center
-      top: 240px
-      right: 1px
-      width: 100%
-      &__link
-        padding: 0
-        margin-bottom: 20px 
   .user
     &__name
       color: $light
@@ -189,6 +157,8 @@
   .breadcrumb
     display: none
   .hotel
+    &-slider
+     display: none
     &-wrapper
       &__stars
         display: none
@@ -201,8 +171,6 @@
   .booking
     &__view
       display: none
-  .slider
-    display: none
   .map
     display: none
   .newsletter
