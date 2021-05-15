@@ -803,10 +803,6 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .newsletter::before {
@@ -850,6 +846,11 @@ template {
   font-size: 36px;
   line-height: 45px;
   text-transform: uppercase;
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
 }
 
 .subscribe {
@@ -923,7 +924,7 @@ template {
           align-items: center;
   max-width: 731px;
   min-height: 280px;
-  margin: 45px auto;
+  margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
   padding: 0 62px 30px;
@@ -949,6 +950,10 @@ template {
   height: 47px;
   background-image: url(../img/quote-right.svg);
   background-repeat: no-repeat;
+}
+
+.reviews-slider__svg {
+  fill: #828282;
 }
 
 .reviews-slider__button {
@@ -1262,6 +1267,10 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
