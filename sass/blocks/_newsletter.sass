@@ -1,11 +1,6 @@
 .newsletter
   position: relative
   padding: 98px 0 87px 0
-  // background-image: url(../img/newsletter-bg.jpg)
-  // background-repeat: no-repeat
-  // background-position: center
-  // background-attachment: fixed
-  // background-size: cover
   &::before
     content: ''
     position: absolute
@@ -22,7 +17,7 @@
     align-items: center
     justify-content: space-between
     max-width: 731px
-    margin: auto
+    margin: 0 auto
   &-title
     color: $light
     font-style: normal
@@ -35,6 +30,8 @@
       font-size: 36px
       line-height: 45px
       text-transform: uppercase
+  &__title
+    margin: 0
 .subscribe
   position: relative
   width: 350px
@@ -61,4 +58,9 @@
     border: none
     background-color: $primary
     cursor: pointer
+    color: $light
+    font-weight: 700
+    font-style: normal
+    font-size: 12px
+    line-height: 15px
 

@@ -496,7 +496,7 @@ template {
 
 .breadcrumb-list__item:not(:last-child)::after {
   content: '/';
-  margin-right: 4px;
+  margin-right: 3px;
 }
 
 .breadcrumb-list__link {
@@ -535,26 +535,31 @@ template {
 .hotel-wrapper__stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-top: -10px;
+  margin-left: 4px;
 }
 
 .hotel-wrapper__name {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .hotel-wrapper__offer {
   font-size: 10px;
   line-height: 13px;
-  padding: 4px 9px;
+  padding: 4px 11px;
   background-color: #EC1F46;
   color: #fff;
   border-radius: 3px;
   margin-left: 14px;
+  margin-top: 3px;
 }
 
 .hotel-slider {
   width: 728px;
   height: 450px;
   border-radius: 8px;
+  margin: 0;
 }
 
 .hotel-slider__item {
@@ -637,6 +642,7 @@ template {
   background-color: #EC1F46;
   color: #fff;
   border-radius: 4px;
+  margin-top: -21px;
 }
 
 .raiting__text {
@@ -672,7 +678,7 @@ template {
 .booking__view {
   width: 350px;
   min-height: 210px;
-  padding: 28px;
+  padding: 22px 28px;
   background-color: #0A223D;
   color: #fff;
   border-radius: 8px;
@@ -689,18 +695,22 @@ template {
 
 .booking__top {
   font-style: normal;
+  font-weight: 400;
   font-size: 10px;
   line-height: 13px;
 }
 
 .booking__middle {
   display: block;
+  font-style: normal;
+  font-weight: 800;
   font-size: 24px;
   line-height: 32px;
 }
 
 .booking__bottom {
   font-style: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
 }
@@ -713,19 +723,46 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 13px;
 }
 
 .booking__up {
-  margin-top: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 8px;
 }
 
+.booking__down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking__guest {
+  margin-right: 8px;
+}
+
+.booking__room {
+  margin-right: 14px;
+}
+
 .booking__text-guest {
-  margin-left: 9px;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .booking__text-room {
-  margin-left: 15px;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .booking__cont {
@@ -764,7 +801,6 @@ template {
 }
 
 .booking__number {
-  margin-left: 8px;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
@@ -800,6 +836,310 @@ template {
   background-color: #686868;
 }
 
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 350px 350px 350px;
+      grid-template-columns: 350px 350px 350px;
+  -ms-grid-rows: 500px 500px 500px;
+      grid-template-rows: 500px 500px 500px;
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  border: 1px solid;
+  max-width: 1110px;
+  padding-bottom: 70px;
+  margin: auto;
+}
+
+.grid__title {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  border: 1px solid red;
+}
+
+.grid__card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-columns: 366px 364px;
+      grid-template-columns: 366px 364px;
+  -ms-grid-rows: 500px;
+      grid-template-rows: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid red;
+}
+
+.grid__card-background {
+  position: relative;
+  border: 1px solid red;
+  width: 100%;
+}
+
+.grid__card-bg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid__card-sticker {
+  position: absolute;
+  left: 0;
+  top: 28px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 5px 15px;
+  background-color: #EC1F46;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.grid__card-text {
+  background-color: #0A223D;
+  color: #fff;
+  border: 1px solid red;
+  padding: 37px 21px 30px 43px;
+}
+
+.grid__card-stars {
+  margin-bottom: 6px;
+}
+
+.grid__card-name {
+  margin: 0 0 27px 0;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.grid__card-description {
+  margin: 0;
+  margin-bottom: 46px;
+  text-align: justify;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+  vertical-align: top;
+  align: left;
+}
+
+.grid__card-top {
+  margin-bottom: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid__card-adress {
+  margin-right: 15px;
+}
+
+.grid__card-span {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.grid__card-middle {
+  margin-bottom: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid__card-guest {
+  margin-right: 15px;
+}
+
+.grid__card-bottom {
+  margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid__card-room {
+  margin-right: 15px;
+}
+
+.grid__card-discont {
+  display: block;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.grid__card-price {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.grid__card-button {
+  padding: 8px 23px;
+  border-radius: 4px;
+  border: none;
+  background-color: #EC1F46;
+  color: #fff;
+}
+
+.grid__card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid__element {
+  border: 1px solid red;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.grid__element-img {
+  height: 250px;
+}
+
+.grid__element-bg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.grid__element-title {
+  margin: 0 0 23px 0;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.grid__element-content {
+  background-color: #0A223D;
+  color: #fff;
+  height: 100%;
+  padding: 30px 21px 25px 32px;
+}
+
+.grid__element-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+.grid__element-adress {
+  margin-right: 15px;
+}
+
+.grid__element-span {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.grid__element-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+.grid__element-guest {
+  margin-right: 15px;
+}
+
+.grid__element-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.grid__element-room {
+  margin-right: 15px;
+}
+
+.grid__element-discont {
+  text-decoration: line-through;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.grid__element-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid__element-price {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.grid__element-button {
+  padding: 8px 23px;
+  border-radius: 4px;
+  border: none;
+  background-color: #EC1F46;
+  color: #fff;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -829,7 +1169,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 731px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .newsletter-title {
@@ -846,6 +1186,10 @@ template {
   font-size: 36px;
   line-height: 45px;
   text-transform: uppercase;
+}
+
+.newsletter__title {
+  margin: 0;
 }
 
 .subscribe {
@@ -878,6 +1222,11 @@ template {
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .reviews {
@@ -891,6 +1240,7 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 70px;
 }
 
@@ -945,6 +1295,7 @@ template {
   height: 47px;
   background-image: url(../img/quote-right.svg);
   background-repeat: no-repeat;
+  z-index: 0;
 }
 
 .reviews-slider__svg {
@@ -985,6 +1336,7 @@ template {
           align-items: center;
   margin-top: -45px;
   margin-bottom: 30px;
+  padding-left: 7px;
 }
 
 .reviews-slider__avatar {
@@ -993,7 +1345,7 @@ template {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 9px;
+  margin-bottom: 11px;
 }
 
 .reviews-slider__username {
@@ -1002,6 +1354,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #EC1F46;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -1014,12 +1367,7 @@ template {
 }
 
 .reviews-slider__stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: -8px;
 }
 
 .reviews-slider__text {
@@ -1028,9 +1376,10 @@ template {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 160%;
   text-align: justify;
   margin: auto;
+  z-index: 99;
 }
 
 .activities {
@@ -1052,6 +1401,7 @@ template {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 57px;
 }
 
@@ -1120,6 +1470,7 @@ template {
   border-radius: 4px;
   background-color: #EC1F46;
   padding: 7px 22px;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -1156,6 +1507,30 @@ template {
   .card {
     width: 225px;
     height: 225px;
+  }
+  .grid {
+    -ms-grid-columns: (50%)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 50%);
+    -ms-grid-rows: 500px 500px 500px;
+        grid-template-rows: 500px 500px 500px;
+    max-width: 960px;
+    margin: auto;
+  }
+  .grid__card {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .grid__card-background {
+    width: 100%;
+    height: 100%;
+  }
+  .grid__card-bg {
+    width: 100%;
+    height: 100%;
+  }
+  .grid__card-text {
+    padding: 37px 43px 30px 30px;
+    height: 100%;
   }
 }
 
@@ -1207,6 +1582,28 @@ template {
   }
   .activities__card:nth-last-child(-n+2) {
     margin-bottom: 0;
+  }
+  .grid {
+    -ms-grid-columns: (50%)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 50%);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    max-width: 725px;
+    margin: auto;
+    padding-right: 26px;
+  }
+  .grid__card {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .grid__card-text {
+    padding: 20px 43px 30px 30px;
+  }
+  .grid__element {
+    width: 350px;
+  }
+  .grid__element-content {
+    height: 100%;
   }
 }
 
@@ -1318,6 +1715,28 @@ template {
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
     margin-right: -65px;
+  }
+  .grid {
+    -ms-grid-columns: (300px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 300px);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    padding-right: 0;
+    max-width: 576px;
+    margin: auto;
+  }
+  .grid__card {
+    -ms-grid-columns: 285px 295px;
+        grid-template-columns: 285px 295px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .grid__card-text {
+    padding: 20px 30px 30px 30px;
+    width: 100%;
+  }
+  .grid__card-description {
+    margin-bottom: 20px;
   }
 }
 

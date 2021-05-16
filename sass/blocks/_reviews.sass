@@ -7,6 +7,7 @@
     line-height: 45px
     text-align: center
     text-transform: uppercase
+    margin-top: 0
     margin-bottom: 70px
   &-container
     width: 100%
@@ -47,6 +48,7 @@
         height: 47px
         background-image: url(../img/quote-right.svg)
         background-repeat: no-repeat
+        z-index: 0
     &__svg
       fill: #828282
     &__button
@@ -69,18 +71,20 @@
       align-items: center
       margin-top: -45px
       margin-bottom: 30px
+      padding-left: 7px
     &__avatar
       width: 90px
       height: 90px
       border-radius: 50%
       object-fit: cover
-      margin-bottom: 9px
+      margin-bottom: 11px
     &__username
       font-style: normal
       font-weight: bold
       font-size: 12px
       line-height: 15px
       color: $primary
+      margin-top: 0
       margin-bottom: 10px
     &__date
       font-style: normal
@@ -89,15 +93,15 @@
       line-height: 13px
       margin-bottom: 4px
     &__stars
-      display: flex
-      align-items: center
+      margin-top: -8px
     &__text
       max-width: 537px
       min-height: 114px
       font-style: normal
       font-weight: normal
       font-size: 12px
-      line-height: 16px
+      line-height: 160%
       text-align: justify
       margin: auto
+      z-index: 99
       

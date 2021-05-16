@@ -11,20 +11,25 @@
       align-items: center
     &__stars
       flex-basis: 100%
+      margin-top: -10px
+      margin-left: 4px
     &__name
-      margin: 0
+      margin-top: 0
+      margin-bottom: 0
     &__offer
       font-size: 10px
       line-height: 13px
-      padding: 4px 9px
+      padding: 4px 11px
       background-color: $primary
       color: $light
       border-radius: 3px
       margin-left: 14px
+      margin-top: 3px
   &-slider
    width: 728px
    height: 450px
    border-radius: 8px
+   margin: 0
    &__item
     position: relative
     border-radius: 8px
@@ -80,6 +85,7 @@
   background-color: $primary
   color: $light
   border-radius: 4px
+  margin-top: -21px
   &__text
    font-size: 8px
    line-height: 10px
@@ -98,35 +104,53 @@
   &__view
     width: 350px
     min-height: 210px
-    padding: 28px
+    padding: 22px 28px
     background-color: $dark
     color: $light
     border-radius: 8px
   &__wrap
     display: flex
     justify-content: space-between
+
   &__top
     font-style: normal
+    font-weight: 400
     font-size: 10px
     line-height: 13px
   &__middle
     display: block
+    font-style: normal
+    font-weight: 800
     font-size: 24px
     line-height: 32px
   &__bottom
     font-style: normal
+    font-weight: 400
     font-size: 12px
     line-height: 16px
   &__info
     display: flex
     flex-direction: column
+    padding-top: 13px
   &__up
-    margin-top: 4px
+    display: flex
+    align-items: center
     margin-bottom: 8px
+  &__down
+    display: flex
+    align-items: center
+  &__guest
+    margin-right: 8px
+  &__room
+    margin-right: 14px
   &__text-guest
-    margin-left: 9px
+    font-style: normal
+    font-size: 12px
+    line-height: 16px
   &__text-room
-    margin-left: 15px
+    font-style: normal
+    font-size: 12px
+    line-height: 16px
   &__cont
     display: flex
     justify-content: space-between
@@ -146,7 +170,6 @@
       fill: $primary
       transition: 0.3s
   &__number
-    margin-left: 8px
     font-style: normal
     font-size: 18px
     line-height: 24px
