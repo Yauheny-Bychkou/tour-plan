@@ -16,6 +16,7 @@
   display: flex
   flex-direction: column
   align-items: flex-start
+  justify-content: flex-end
   padding: 24px 26px
   width: 255px
   height: 255px
@@ -32,6 +33,8 @@
     right: 0
     background: linear-gradient(179.83deg, rgba(196, 196, 196,0) 35.34%, #0A223D 99.85%)
     z-index: -1
+  &:hover
+    transform: translateY(-4px)
   &__img
     width: 100%
     height: 100%
@@ -49,7 +52,7 @@
     font-style: normal
     font-weight: bold
     font-size: 16px
-    line-height: 20px
+    line-height: 160%
   &__button
     font-style: normal
     font-weight: bold
