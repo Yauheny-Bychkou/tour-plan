@@ -1234,7 +1234,7 @@ template {
   right: 0;
   top: 0;
   height: 100%;
-  min-width: 65px;
+  max-width: 65px;
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
@@ -1243,6 +1243,9 @@ template {
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .reviews {
@@ -1845,15 +1848,15 @@ template {
     margin-bottom: 20px;
   }
   .grid {
-    -ms-grid-columns: (226px)[auto-fill];
-        grid-template-columns: repeat(auto-fill, 226px);
-    -ms-grid-rows: 400px 400px 400px;
-        grid-template-rows: 400px 400px 400px;
+    -ms-grid-columns: (483px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 483px);
+    -ms-grid-rows: 400px 400px 400px 400px;
+        grid-template-rows: 400px 400px 400px 400px;
     max-width: 483px;
   }
   .grid__card {
-    -ms-grid-columns: 200px 200px;
-        grid-template-columns: 200px 200px;
+    -ms-grid-columns: 250px 250px;
+        grid-template-columns: 250px 250px;
     border-radius: 8px;
     overflow: hidden;
   }
