@@ -883,20 +883,20 @@ template {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-rows: minmax(0, 500px) 1fr;
+      grid-template-rows: minmax(0, 500px) 1fr;
   grid-gap: 30px;
   max-width: 1110px;
 }
 
 .grid__card {
+  grid-column: span 2;
   display: -ms-grid;
   display: grid;
-  grid-column: span 2;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 500px;
-      grid-template-rows: 500px;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -1619,8 +1619,8 @@ template {
   .grid {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: minmax(0, 500px) 1fr;
+        grid-template-rows: minmax(0, 500px) 1fr;
     max-width: 930px;
   }
   .grid__card {
@@ -1746,8 +1746,8 @@ template {
   .grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-rows: minmax(0, 500px) 1fr;
+        grid-template-rows: minmax(0, 500px) 1fr;
     max-width: 730px;
   }
   .grid__card {

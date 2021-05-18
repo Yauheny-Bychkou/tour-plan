@@ -16,14 +16,14 @@
 .grid
   display: grid
   grid-template-columns: repeat(3,1fr)
-  grid-template-rows: repeat(2,1fr)
+  grid-template-rows: minmax(0, 500px) 1fr
   grid-gap: 30px
   max-width: 1110px
   &__card
-    display: grid
     grid-column: span 2
+    display: grid
     grid-template-columns: repeat(2,1fr)
-    grid-template-rows: 500px 
+    grid-template-rows: 1fr 
     border-radius: 8px
     overflow: hidden
     &-background

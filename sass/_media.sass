@@ -28,7 +28,7 @@
     height: 225px
   .grid
     grid-template-columns: repeat(3,1fr)
-    grid-template-rows: repeat(2,1fr)
+    grid-template-rows: minmax(0, 500px) 1fr
     max-width: 930px
     &__card
      grid-template-columns: repeat(2,1fr)
@@ -121,7 +121,7 @@
       padding-bottom: 25px
   .grid
     grid-template-columns: repeat(2,1fr)
-    grid-template-rows: repeat(2, 1fr)
+    grid-template-rows: minmax(0, 500px) 1fr
     max-width: 730px
     &__card
      grid-template-columns: repeat(2,1fr)
