@@ -27,11 +27,11 @@
     width: 225px
     height: 225px
   .grid
-    grid-template-columns: repeat(auto-fill, 450px)
-    grid-template-rows: 500px 500px
+    grid-template-columns: repeat(3,1fr)
+    grid-template-rows: repeat(2,1fr)
     max-width: 930px
     &__card
-     grid-template-columns: 50% 50%
+     grid-template-columns: repeat(2,1fr)
      &-background
       width: 100%
       height: 100%
@@ -44,15 +44,42 @@
 @media (max-width: 991px)
   .container, .newsletter-wrapper
     max-width: 731px
+  .navbar
+    &__search
+      margin-right: 75px
+    &-menu
+      &__link
+        font-size: 12px
+        line-height: 15px
+        padding: 22px 0
+        &:nth-child(1)
+          margin-right: 12px
+          margin-left: 15px
+  .raiting
+    &__icon
+      margin-top: -8px
+  .swiper-wrapper
+    max-width: 731px
   .hotel
+    &__wrap
+      padding-top: 16px
+      padding-bottom: 60px
     &-slider
       max-width: 731px
     &__slider
       margin-bottom: 30px
-  .container
-    max-width: 761px
-  .hotel-grid
-    flex-direction: column
+    &__item
+      max-width: 731px
+      position: relative
+      margin-bottom: 10px
+    &__image
+      position: absolute
+      width: 100%
+    &__description
+      margin-left: 2px
+    &-grid
+      max-width: 731px
+      flex-direction: column  
   .swiper-container
     &::after
       max-width: 731px
@@ -60,13 +87,27 @@
     flex-direction: row
     &__view
       width: 340px
+      padding: 22px 24px
+    &__cont
+      margin-top: 6px
   .map
     width: 340px
   .reviews
+    &__title
+      font-size: 30px
+      line-height: 37px
+      margin-bottom: 51px
     &-slider
       &__item
         max-width: 579px
+  .newsletter
+    &__title
+      margin-top: -5px
+    &__subscribe
+      margin-top: -5px
   .activities
+    &__wrap
+      padding-top: 70px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -75,19 +116,22 @@
       margin-bottom: 20px
       &:nth-last-child(-n+2)
         margin-bottom: 0
+  .packges
+    &__wrapper
+      padding-bottom: 25px
   .grid
-    grid-template-columns: repeat(auto-fill, 350px)
-    grid-template-rows: repeat(2, 500px)
+    grid-template-columns: repeat(2,1fr)
+    grid-template-rows: repeat(2, 1fr)
     max-width: 730px
     &__card
-     grid-template-columns: 50% 50%
+     grid-template-columns: repeat(2,1fr)
      &-text
        padding: 20px 43px 30px 30px
     &__element
       width: 350px
       &-content
         height: 100%
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
     max-width: 576px
   .navbar
@@ -140,10 +184,17 @@
     width: 265px
     height: 210px
   .newsletter
+    &__wrap
+      padding-top: 76px
+      padding-bottom: 83px
     &-wrapper
       flex-direction: column
       align-items: flex-start
       max-width: 576px
+    &__title
+      margin-left: 0
+      margin-top: 0
+      margin-bottom: 37px
   .reviews
     &-slider
       &__item
@@ -160,32 +211,60 @@
           right: 50%
           transform: translate(50%, 0)
           margin-right: -65px
+  .packges
+    &__title
+      font-size: 30px
   .grid
-    grid-template-columns: repeat(auto-fill, 257px)
-    grid-template-rows: repeat(2, 450px)
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(3, 1fr)
     max-width: 546px
     &__card
-     grid-template-columns: 268px 278px
+     grid-template-columns: 1fr
+     grid-template-rows: 250px 200px
      border-radius: 8px
      overflow: hidden
      &-text
+       flex-direction: row
+       justify-content: space-between
        width: 100%
-       padding: 20px 30px 30px 30px
+       padding: 20px 30px
+     &-left
+       flex-basis: 50%
+     &-right
+       display: flex
+       flex-direction: column
+       align-items: flex-start
+       padding-left: 30px
+     &-discont
+        font-size: 12px
+     &-price
+       margin-right: 25px
+       font-size: 18px
      &-stars
        margin-bottom: 3px
+       margin-top: -9px
      &-name
       margin: 0 0 13px 0
-      font-size: 18px
+      font-size: 16px
       line-height: 22px
      &-description
       margin: 0
-      margin-bottom: 23px
       font-size: 12px
-      line-height: 20px
+      line-height: 1
+    &-button
+        font-size: 14px
     &__element
       width: 257px
+      &-discont
+        font-size: 12px
+      &-price
+       font-size: 16px
+      &-button
+        font-size: 14px
       &-title
         margin-bottom: 12px
+        font-size: 16px
+        line-height: 22px
       &-content
         padding: 10px 10px 15px 15px
 @media (max-width: 576px)
@@ -199,6 +278,18 @@
         flex-basis: 12%
     &__slider
       height: 200px
+    &-slider
+      &__button
+        width: 15px
+        height: 15px
+        &__svg
+          display: none
+        &__small
+          display: initial 
+        &--prev
+          left: 10px
+        &--next
+          right: 10px
   .swiper-container
     height: 200px
     &__swipe
@@ -232,14 +323,22 @@
       line-height: 22px
     &__card
       width: 100%
+      &:nth-child(2)
+        order: 3
       &:nth-child(3)
         margin-bottom: 20px
+        order: 0
+      &:nth-child(4)
+        order: 4
   .grid
-    grid-template-columns: repeat(auto-fill, 483px)
-    grid-template-rows: 400px 400px 400px 400px
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(4, 1fr)
     max-width: 483px
     &__card
-     grid-template-columns: 250px 250px
+     display: none
+     grid-template-columns: 1fr
+     grid-template-rows: repeat(2, 1fr) 
+     grid-column: span 1
      border-radius: 8px
      overflow: hidden
      &-text
@@ -257,10 +356,13 @@
       font-size: 12px
       line-height: 20px
     &__element
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(2, 1fr)
       width: 100%
       &-title
         margin-bottom: 12px
       &-content
+        height: 100%
         padding: 10px 10px 15px 15px
 @media (max-width: 420px)
   .hotel

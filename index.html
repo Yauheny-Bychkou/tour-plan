@@ -16,7 +16,7 @@
   <body>
     <header class="navbar">
       <div class="container">
-        <div class="navbar-top">
+        <div class="navbar-top navbar__top">
           <a href="#" class="logo">
             <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
           </a>
@@ -41,7 +41,7 @@
       <!-- /.container -->
       <nav class="navbar-bottom">
         <div class="container">
-          <ul class="navbar-menu">
+          <ul class="navbar-menu navbar__menu">
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
@@ -56,7 +56,7 @@
     <!-- /.navbar -->
     <nav class="breadcrumb">
       <div class="container">
-        <ul class="breadcrumb-list">
+        <ul class="breadcrumb-list breadcrumb__list">
           <li class="breadcrumb-list__item">
             <a href="#" class="breadcrumb-list__link">Home</a>
           </li>
@@ -69,9 +69,9 @@
       <!-- /.container -->
     </nav>
     <!-- /.breadcrumb -->
-    <section class="hotel">
+    <section class="hotel hotel__wrap">
       <div class="container">
-        <div class="hotel-wrapper">
+        <div class="hotel-wrapper hotel__wrapper">
           <div class="hotel-wrapper__left">
             <div class="hotel-wrapper__stars">
               <img src="img/star.svg" alt="star" />
@@ -82,10 +82,12 @@
             </div>
             <h1 class="hotel-name hotel-wrapper__name">GRAND HILTON HOTEL</h1>
             <span class="hotel-wrapper__offer">Flash offer</span>
-            <p class="hotel-description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
+            <p class="hotel-description hotel__description">
+              Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
+            </p>
           </div>
           <!-- /.hotel-info -->
-          <div class="raiting">
+          <div class="raiting raiting__icon">
             <span class="raiting__text">User Rattings</span>
             <span class="raiting__counter">4.5/<span class="raiting__small">5</span></span>
           </div>
@@ -115,6 +117,19 @@
             </div>
             <!-- If we need navigation buttons -->
             <button class="hotel-slider__button hotel-slider__button--prev">
+              <svg
+                class="hotel-slider__button__svg hotel-slider__button__small"
+                width="5"
+                height="8"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.63.358a.511.511 0 010 .704L2.098 3.693l2.53 2.632a.511.511 0 010 .703.465.465 0 01-.676 0L1.084 4.045a.511.511 0 010-.703L3.953.358a.465.465 0 01.676 0z"
+                  fill-opacity=".8"
+                />
+              </svg>
               <svg class="hotel-slider__button__svg" width="10" height="18" xmlns="http://www.w3.org/2000/svg">
                 <path
                   fill-rule="evenodd"
@@ -125,6 +140,14 @@
               </svg>
             </button>
             <button class="hotel-slider__button hotel-slider__button--next">
+              <svg class="hotel-slider__button__svg" width="5" height="8" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.05.358a.465.465 0 01.676 0l2.869 2.984a.511.511 0 010 .703L1.726 7.028a.465.465 0 01-.676 0 .511.511 0 010-.703l2.53-2.632-2.53-2.631a.511.511 0 010-.704z"
+                  fill-opacity=".8"
+                />
+              </svg>
               <svg class="hotel-slider__button__svg" width="11" height="18" xmlns="http://www.w3.org/2000/svg">
                 <path
                   fill-rule="evenodd"
@@ -181,179 +204,193 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
-    <section class="other">
+    <section class="packges packges__block">
       <div class="container">
-        <div class="other__packges">
-          <h3 class="other__title">Other Packages</h3>
+        <div class="packges__wrapper">
+          <h3 class="packges__title">Other Packages</h3>
+        </div>
+        <div class="grid">
+          <div class="grid__card">
+            <div class="grid__card-background">
+              <img src="img/packges-1.jpg" alt="Hotel Blue Haven" class="grid__card-bg" />
+              <span class="grid__card-sticker">Flash Offer</span>
+            </div>
+            <div class="grid__card-text">
+              <div class="grid__card-left">
+                <div class="grid__card-stars">
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                  <img src="img/star.svg" alt="star" />
+                </div>
+                <h3 class="grid__card-name">Hotel Blue Haven</h3>
+                <p class="grid__card-description">
+                  Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est
+                  fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum
+                  occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+                </p>
+              </div>
+              <div class="grid__card-right">
+                <div class="grid__card-icons">
+                  <div class="grid__element-top">
+                    <img src="img/map-pin.svg" alt="" class="grid__element-adress" />
+                    <span class="grid__card-span">1749 Wheeler Ridge Delaware</span>
+                  </div>
+                  <div class="grid__card-middle">
+                    <img src="img/guest.svg" alt="Icon: map-pin" class="grid__element-guest" />
+                    <span class="grid__element-span">2 x Guests</span>
+                  </div>
+                  <div class="grid__card-bottom">
+                    <img src="img/room.svg" alt="Icon: map-pin" class="grid__element-room" />
+                    <span class="grid__element-span">1 x Room</span>
+                  </div>
+                </div>
+                <span class="grid__card-discont">$ 10,500</span>
+                <div class="grid__card-footer">
+                  <span class="grid__card-price">$ 8,500</span>
+                  <button class="grid__card-button">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.grid__card -->
+          <div class="grid__element">
+            <div class="grid__element-img">
+              <img src="img/packges-2.jpg" alt="LUX* Belle Mare" class="grid__element-bg" />
+              <span class="grid__element-sticker">Flash Offer</span>
+            </div>
+            <div class="grid__element-content">
+              <h3 class="grid__element-title">LUX* Belle Mare</h3>
+              <div class="grid__element-icon">
+                <div class="grid__element-top">
+                  <img src="img/map-pin.svg" alt="" class="grid__element-adress" />
+                  <span class="grid__element-span">1749 Wheeler Ridge Delaware</span>
+                </div>
+                <div class="grid__element-middle">
+                  <img src="img/guest.svg" alt="Icon: map-pin" class="grid__element-guest" />
+                  <span class="grid__element-span">2 x Guests</span>
+                </div>
+                <div class="grid__element-bottom">
+                  <img src="img/room.svg" alt="Icon: map-pin" class="grid__element-room" />
+                  <span class="grid__element-span">1 x Room</span>
+                </div>
+              </div>
+              <span class="grid__element-discont">$ 8,500</span>
+              <div class="grid__element-footer">
+                <span class="grid__element-price">$ 3,000</span>
+                <button class="grid__element-button">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- /.grid__element -->
+          <div class="grid__element">
+            <div class="grid__element-img">
+              <img src="img/packges-3.jpg" alt="LUX* Belle Mare" class="grid__element-bg" />
+              <span class="grid__element-sticker">Flash Offer</span>
+            </div>
+            <div class="grid__element-content">
+              <h3 class="grid__element-title">White Palace</h3>
+              <div class="grid__element-icon">
+                <div class="grid__element-top">
+                  <img src="img/map-pin.svg" alt="" class="grid__element-adress" />
+                  <span class="grid__element-span">1749 Wheeler Ridge Delaware</span>
+                </div>
+                <div class="grid__element-middle">
+                  <img src="img/guest.svg" alt="Icon: map-pin" class="grid__element-guest" />
+                  <span class="grid__element-span">2 x Guests</span>
+                </div>
+                <div class="grid__element-bottom">
+                  <img src="img/room.svg" alt="Icon: map-pin" class="grid__element-room" />
+                  <span class="grid__element-span">1 x Room</span>
+                </div>
+              </div>
+              <span class="grid__element-discont">$ 10,500</span>
+              <div class="grid__element-footer">
+                <span class="grid__element-price">$ 9,500</span>
+                <button class="grid__element-button">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="grid__element">
+            <div class="grid__element-img">
+              <img src="img/packges-4.jpg" alt="LUX* Belle Mare" class="grid__element-bg" />
+              <span class="grid__element-sticker">Flash Offer</span>
+            </div>
+            <div class="grid__element-content">
+              <h3 class="grid__element-title">Luxury Place</h3>
+              <div class="grid__element-icon">
+                <div class="grid__element-top">
+                  <img src="img/map-pin.svg" alt="" class="grid__element-adress" />
+                  <span class="grid__element-span">1749 Wheeler Ridge Delaware</span>
+                </div>
+                <div class="grid__element-middle">
+                  <img src="img/guest.svg" alt="Icon: map-pin" class="grid__element-guest" />
+                  <span class="grid__element-span">2 x Guests</span>
+                </div>
+                <div class="grid__element-bottom">
+                  <img src="img/room.svg" alt="Icon: map-pin" class="grid__element-room" />
+                  <span class="grid__element-span">1 x Room</span>
+                </div>
+              </div>
+              <span class="grid__element-discont">$ 4,500</span>
+              <div class="grid__element-footer">
+                <span class="grid__element-price">$ 2,500</span>
+                <button class="grid__element-button">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="grid__element">
+            <div class="grid__element-img">
+              <img src="img/packges-5.jpg" alt="LUX* Belle Mare" class="grid__element-bg" />
+              <span class="grid__element-sticker">Flash Offer</span>
+            </div>
+            <div class="grid__element-content">
+              <h3 class="grid__element-title">Hotel Five Star</h3>
+              <div class="grid__element-icon">
+                <div class="grid__element-top">
+                  <img src="img/map-pin.svg" alt="" class="grid__element-adress" />
+                  <span class="grid__element-span">1749 Wheeler Ridge Delaware</span>
+                </div>
+                <div class="grid__element-middle">
+                  <img src="img/guest.svg" alt="Icon: map-pin" class="grid__element-guest" />
+                  <span class="grid__element-span">2 x Guests</span>
+                </div>
+                <div class="grid__element-bottom">
+                  <img src="img/room.svg" alt="Icon: map-pin" class="grid__element-room" />
+                  <span class="grid__element-span">1 x Room</span>
+                </div>
+              </div>
+              <span class="grid__element-discont">$ 6,500</span>
+              <div class="grid__element-footer">
+                <span class="grid__element-price">$ 3,500</span>
+                <button class="grid__element-button">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- /.grid__element -->
         </div>
       </div>
     </section>
-    <section class="grid">
-      <div class="grid__card">
-        <div class="grid__card-background">
-          <img src="img/packges-1.jpg" alt="Hotel Blue Haven" class="grid__card-bg" />
-          <span class="grid__card-sticker">Flash Offer</span>
-        </div>
-        <div class="grid__card-text">
-          <div class="grid__card-stars">
-            <img src="img/star.svg" alt="star" />
-            <img src="img/star.svg" alt="star" />
-            <img src="img/star.svg" alt="star" />
-            <img src="img/star.svg" alt="star" />
-            <img src="img/star.svg" alt="star" />
-          </div>
-          <h3 class="grid__card-name">Hotel Blue Haven</h3>
-          <p class="grid__card-description">
-            Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat
-            velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod
-            nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do
-          </p>
-          <div class="grid__card-top">
-            <img src="img/map-pin.svg" alt="Icon: map-pin" class="grid__card-adress" />
-            <span class="grid__card-span">1749 Wheeler Ridge Delaware</span>
-          </div>
-          <div class="grid__card-middle">
-            <img src="img/guest.svg" alt="Icon: map-pin" class="grid__card-guest" />
-            <span class="grid__card-span">2 x Guests</span>
-          </div>
-          <div class="grid__card-bottom">
-            <img src="img/room.svg" alt="Icon: map-pin" class="grid__card-room" />
-            <span class="grid__card-span">1 x Room</span>
-          </div>
-          <span class="grid__card-discont">$ 10,500</span>
-          <div class="grid__card-footer">
-            <span class="grid__card-price">$ 8,500</span>
-            <button class="grid__card-button">Book Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- /.grid__card -->
-      <div class="grid__element">
-        <div class="grid__element-img">
-          <img src="img/packges-2.jpg" alt="LUX* Belle Mare" class="grid__element-bg" />
-          <span class="grid__element-sticker">Flash Offer</span>
-        </div>
-        <div class="grid__element-content">
-          <h3 class="grid__element-title">LUX* Belle Mare</h3>
-          <div class="grid__element-top">
-            <img src="img/map-pin.svg" alt="" class="grid__element-adress" />
-            <span class="grid__element-span">1749 Wheeler Ridge Delaware</span>
-          </div>
-          <div class="grid__element-middle">
-            <img src="img/guest.svg" alt="Icon: map-pin" class="grid__element-guest" />
-            <span class="grid__element-span">2 x Guests</span>
-          </div>
-          <div class="grid__element-bottom">
-            <img src="img/room.svg" alt="Icon: map-pin" class="grid__element-room" />
-            <span class="grid__element-span">1 x Room</span>
-          </div>
-          <span class="grid__element-discont">$ 8,500</span>
-          <div class="grid__element-footer">
-            <span class="grid__element-price">$ 3,000</span>
-            <button class="grid__element-button">Book Now</button>
-          </div>
-        </div>
-      </div>
-      <!-- /.grid__element -->
-      <div class="grid__element">
-        <div class="grid__element">
-          <div class="grid__element-img">
-            <img src="img/packges-2.jpg" alt="LUX* Belle Mare" class="grid__element-bg" />
-            <span class="grid__element-sticker">Flash Offer</span>
-          </div>
-          <div class="grid__element-content">
-            <h3 class="grid__element-title">White Palace</h3>
-            <div class="grid__element-top">
-              <img src="img/map-pin.svg" alt="" class="grid__element-adress" />
-              <span class="grid__element-span">1749 Wheeler Ridge Delaware</span>
-            </div>
-            <div class="grid__element-middle">
-              <img src="img/guest.svg" alt="Icon: map-pin" class="grid__element-guest" />
-              <span class="grid__element-span">2 x Guests</span>
-            </div>
-            <div class="grid__element-bottom">
-              <img src="img/room.svg" alt="Icon: map-pin" class="grid__element-room" />
-              <span class="grid__element-span">1 x Room</span>
-            </div>
-            <span class="grid__element-discont">$ 10,500</span>
-            <div class="grid__element-footer">
-              <span class="grid__element-price">$ 9,500</span>
-              <button class="grid__element-button">Book Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /.grid__element -->
-      <div class="grid__element">
-        <div class="grid__element">
-          <div class="grid__element-img">
-            <img src="img/packges-2.jpg" alt="LUX* Belle Mare" class="grid__element-bg" />
-            <span class="grid__element-sticker">Flash Offer</span>
-          </div>
-          <div class="grid__element-content">
-            <h3 class="grid__element-title">Luxury Place</h3>
-            <div class="grid__element-top">
-              <img src="img/map-pin.svg" alt="" class="grid__element-adress" />
-              <span class="grid__element-span">1749 Wheeler Ridge Delaware</span>
-            </div>
-            <div class="grid__element-middle">
-              <img src="img/guest.svg" alt="Icon: map-pin" class="grid__element-guest" />
-              <span class="grid__element-span">2 x Guests</span>
-            </div>
-            <div class="grid__element-bottom">
-              <img src="img/room.svg" alt="Icon: map-pin" class="grid__element-room" />
-              <span class="grid__element-span">1 x Room</span>
-            </div>
-            <span class="grid__element-discont">$ 4,500</span>
-            <div class="grid__element-footer">
-              <span class="grid__element-price">$ 2,500</span>
-              <button class="grid__element-button">Book Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /.grid__element -->
-      <div class="grid__element">
-        <div class="grid__element">
-          <div class="grid__element-img">
-            <img src="img/packges-2.jpg" alt="LUX* Belle Mare" class="grid__element-bg" />
-            <span class="grid__element-sticker">Flash Offer</span>
-          </div>
-          <div class="grid__element-content">
-            <h3 class="grid__element-title">Hotel Five Star</h3>
-            <div class="grid__element-top">
-              <img src="img/map-pin.svg" alt="" class="grid__element-adress" />
-              <span class="grid__element-span">1749 Wheeler Ridge Delaware</span>
-            </div>
-            <div class="grid__element-middle">
-              <img src="img/guest.svg" alt="Icon: map-pin" class="grid__element-guest" />
-              <span class="grid__element-span">2 x Guests</span>
-            </div>
-            <div class="grid__element-bottom">
-              <img src="img/room.svg" alt="Icon: map-pin" class="grid__element-room" />
-              <span class="grid__element-span">1 x Room</span>
-            </div>
-            <span class="grid__element-discont">$ 6,500</span>
-            <div class="grid__element-footer">
-              <span class="grid__element-price">$ 3,500</span>
-              <button class="grid__element-button">Book Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /.grid__element -->
-    </section>
+
     <!-- /.other-packges -->
-    <section class="newsletter" data-parallax="scroll" data-speed="0.8" data-image-src="img/newsletter-bg.jpg">
-      <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
-          subscribe to our
-          <span class="newsletter-title__strong"> Newsletter</span>
-        </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
-          <input type="text" class="subscribe__input" required placeholder="Your email address" />
-          <button class="subscribe__button">SendSendSendSendSendSendSendSendSendSendSend</button>
-        </form>
+    <section
+      class="newsletter newsletter__wrap"
+      data-parallax="scroll"
+      data-speed="0.8"
+      data-image-src="img/newsletter-bg.jpg"
+    >
+      <div class="container">
+        <div class="newsletter-wrapper newsletter__wrapper">
+          <h2 class="newsletter-title newsletter__title">
+            subscribe to our
+            <span class="newsletter-title__strong"> Newsletter</span>
+          </h2>
+          <form action="#" class="subscribe newsletter__subscribe">
+            <input type="text" class="subscribe__input" required placeholder="Your email address" />
+            <button class="subscribe__button">Send</button>
+          </form>
+        </div>
       </div>
     </section>
     <!-- /.newsletter -->
@@ -440,7 +477,7 @@
       </div>
     </section>
     <!-- /.reviews -->
-    <section class="activities">
+    <section class="activities activities__wrap">
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">

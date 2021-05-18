@@ -1,6 +1,7 @@
 .hotel
-  padding-top: 24px
-  padding-bottom: 70px
+  &__wrap
+    padding-top: 24px
+    padding-bottom: 70px
   &-wrapper
     display: flex
     justify-content: space-between
@@ -11,8 +12,6 @@
       align-items: center
     &__stars
       flex-basis: 100%
-      margin-top: -10px
-      margin-left: 4px
     &__name
       margin-top: 0
       margin-bottom: 0
@@ -26,7 +25,7 @@
       margin-left: 14px
       margin-top: 3px
   &-slider
-   width: 728px
+   max-width: 728px
    height: 450px
    border-radius: 8px
    margin: 0
@@ -66,6 +65,8 @@
       left: 18px
     &__svg
       fill: #fff 
+    &__small
+      display: none
   &-name
     font-size: 24px
     line-height: 30px
@@ -73,6 +74,7 @@
     flex-basis: 100%
     font-size: 12px
     line-height: 15px
+  &__description
     margin: 0
     padding-bottom: 20px
   &-grid
@@ -85,7 +87,9 @@
   background-color: $primary
   color: $light
   border-radius: 4px
-  margin-top: -21px
+  &__icon
+    margin-top: -21px
+    margin-left: -5px
   &__text
    font-size: 8px
    line-height: 10px
@@ -111,7 +115,6 @@
   &__wrap
     display: flex
     justify-content: space-between
-
   &__top
     font-style: normal
     font-weight: 400

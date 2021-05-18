@@ -1,8 +1,10 @@
-.other
-  &__packges
+.packges
+  &__block
+    padding-top: 40px
+    padding-bottom: 70px
+  &__wrapper
     display: flex
     justify-content: center
-    padding-top: 40px
     padding-bottom: 65px
   &__title
     margin: 0
@@ -13,18 +15,15 @@
     text-transform: uppercase
 .grid
   display: grid
-  grid-template-columns: 350px 350px 350px
-  grid-template-rows: 500px 500px 
-  row-gap: 30px
-  column-gap: 30px
+  grid-template-columns: repeat(3,1fr)
+  grid-template-rows: repeat(2,1fr)
+  grid-gap: 30px
   max-width: 1110px
-  padding-bottom: 70px
-  margin: auto
   &__card
     display: grid
-    grid-column: 1/3
-    grid-template-columns: 366px 364px
-    grid-template-rows: 500px
+    grid-column: span 2
+    grid-template-columns: repeat(2,1fr)
+    grid-template-rows: 500px 
     border-radius: 8px
     overflow: hidden
     &-background
@@ -44,8 +43,11 @@
       padding: 5px 15px
       background-color: $primary
       color: $light
-      border-radius: 4px
+      border-top-right-radius: 4px
+      border-bottom-right-radius: 4px
     &-text 
+      display: flex
+      flex-direction: column
       background-color: $dark
       color: $light
       padding: 37px 21px 30px 43px
@@ -57,16 +59,25 @@
       font-style: normal
       font-size: 18px
       line-height: 22px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      max-height: 23px
+      max-width: 170px
     &-description
       margin: 0
-      margin-bottom: 46px
+      margin-bottom: 40px
       text-align: justify
       font-weight: 400
       font-style: normal
       font-size: 14px
-      line-height: 22px
+      line-height: 160%
       vertical-align: top
       align: left
+      max-height: 165px
+      overflow-y: auto
+    &-icons
+      margin-bottom: 37px
     &-top
       margin-bottom: 11px
       display: flex
@@ -79,13 +90,12 @@
       font-size: 12px
       line-height: 15px
     &-middle
-      margin-bottom: 11px
       display: flex
       align-items: center
+      margin-bottom: 11px
     &-guest
       margin-right: 15px
     &-bottom
-      margin-bottom: 35px
       display: flex
       align-items: center
     &-room
@@ -93,7 +103,6 @@
     &-discont
       display: block
       text-decoration: line-through
-      margin-bottom: 5px
       font-weight: 400
       font-style: normal
       font-size: 14px
@@ -104,7 +113,7 @@
       font-size: 24px
       line-height: 30px
     &-button
-      padding: 8px 23px
+      padding: 9px 27px
       border-radius: 4px
       border: none
       background-color: $primary
@@ -112,28 +121,44 @@
       font-size: 14px
       line-height: 19px
       cursor: pointer
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+      max-width: 125px
     &-footer
       display: flex
       justify-content: space-between
       align-items: center
   &__element
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(2, 1fr)
     border-radius: 8px
     overflow: hidden
     &-img
       position: relative
-      height: 252px
+    &-bg
+      width: 100%
+      height: 100%
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      object-fit: cover
     &-sticker
       position: absolute
       left: 0
-      top: 28px
+      top: 25px
       font-weight: 400
       font-style: normal
-      font-size: 12px
-      line-height: 15px
+      font-size: 8px
+      line-height: 10px
       padding: 4px 9px
       background-color: $primary
       color: $light
-      border-radius: 4px
+      border-top-right-radius: 4px
+      border-bottom-right-radius: 4px
     &-bg
       width: 100%
       height: 100%
@@ -144,11 +169,17 @@
       font-style: normal
       font-size: 18px
       line-height: 22px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      max-height: 23px
+      max-width: 170px
     &-content
       background-color: $dark
       color: $light
-      height: 100%
       padding: 30px 21px 25px 32px
+    &-icon
+      margin-bottom: 25px
     &-top
       display: flex
       align-items: center
@@ -169,7 +200,6 @@
     &-bottom
       display: flex
       align-items: center
-      margin-bottom: 25px
     &-room
       margin-right: 15px
     &-discont
@@ -187,12 +217,18 @@
       font-size: 24px
       line-height: 30px
     &-button
-      padding: 8px 23px
+      padding: 9px 26px
       border-radius: 4px
       border: none
       background-color: $primary
       color: $light
+      font-size: 14px
+      line-height: 19px
       cursor: pointer
+      overflow: hidden
+      white-space: nowrap
+      text-overflow: ellipsis
+      max-width: 125px
 
 
 
