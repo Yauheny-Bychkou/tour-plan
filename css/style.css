@@ -2135,12 +2135,12 @@ template {
 
 @media (max-width: 363px) {
   .hotel-wrapper__stars {
-    -ms-flex-preferred-size: 16%;
-        flex-basis: 16%;
+    -ms-flex-preferred-size: 17%;
+        flex-basis: 17%;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 319px) {
   body {
     background-color: #0A223D;
   }
