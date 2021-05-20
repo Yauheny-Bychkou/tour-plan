@@ -167,18 +167,23 @@
   &__tel
     text-decoration: none
     color: inherit 
+    &:hover 
+      color: $primary
+      transition: 0.3s
   &__phone
     fill: #fff
-    &:hover
+    &:hover 
       fill: $primary
       transition: 0.3s
   &__number
     font-style: normal
     font-size: 18px
     line-height: 24px
-    &:hover
+    &:hover + .booking__phone
+      fill: $primary
       color: $primary
       transition: 0.3s
+      z-index: 99
   &__button
     width: 100%
     background-color: $primary

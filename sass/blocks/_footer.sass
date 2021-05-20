@@ -1,6 +1,9 @@
 .footer
   background-color: $dark
   color: $light
+  &-container
+    display: grid
+    row-gap: 94px
   &__wrap
     padding-top: 108px
     padding-bottom: 46px
@@ -72,10 +75,30 @@
       padding-left: 15px
       padding-top: 8px
       align-self: center
+      &-fb
+        position: relative
+        margin-right: 33px
       &-inst
-        margin-left: 6px
+        margin-right: 20px
+        position: relative
       &-yt
-        margin-left: 6px
+        margin-right: 30px
+        position: relative
+      &-facebook
+        fill: #BDBDBD
+        position: absolute
+        &:hover
+          fill: $primary
+      &-youtube
+        fill: #BDBDBD
+        position: absolute
+        &:hover
+          fill: $primary
+      &-instagram
+        fill: #BDBDBD
+        position: absolute
+        &:hover
+          fill: $primary
   &__element
     padding-top: 13px
   &-element
@@ -102,6 +125,18 @@
       margin: 22px 0 0 0
     &-svg
       margin-right: 22px
+    &-map
+      fill: #BDBDBD
+      &:hover
+        fill: $primary
+    &-phone
+      fill: #BDBDBD
+      &:hover
+        fill: $primary
+    &-mail
+      fill: #BDBDBD
+      &:hover
+        fill: $primary
     &__item
       list-style: none
       display: flex
@@ -120,8 +155,6 @@
   &-contacts
     &__title
       margin-bottom: 34px
-  &__block
-    padding-top: 94px
   &-block
     display: grid
     grid-template-columns: repeat(2, 1fr)
@@ -210,5 +243,7 @@
       font-style: normal
       font-size: 12px
       line-height: 15px
+      &:hover
+        color: $primary
 
   

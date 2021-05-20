@@ -149,6 +149,8 @@
       &-content
         height: 100%
   .footer
+    &-container
+      row-gap: 70px
     &__wrap
       padding-top: 68px
       padding-bottom: 33px
@@ -182,22 +184,16 @@
         grid-column: 4 / 13
         padding-left: 12px
         padding-top: 12px
-        &-fb
-          margin-right: 7px
-        &-yt
-          margin-right: 7px
       &__title-social
         margin-right: 43px
-    &__block
-      padding-top: 70px
     &-block
       grid-template-columns: minmax(0, 539px)
       grid-template-rows: repeat(2, minmax(0, max-content))
+      row-gap: 60px
     &__element
       padding-top: 0
     &__contacts
       padding-left: 0
-      padding-top: 60px
     &__breadcrumb
       padding-top: 63px
 @media (max-width: 767px)
@@ -364,6 +360,8 @@
         grid-row: 2 / 3
         grid-column: 1 / 2
         padding: 30px 0 0 0
+        &-fb
+          margin-right: 30px
       &__title-social
         margin-right: 0
         margin-bottom: 22px
