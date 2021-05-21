@@ -35,13 +35,15 @@
       font-style: normal
       font-size: 14px
       line-height: 22px
+      display: block
       &:hover
         color: $primary
-        transition: 0.5s
+        transition: 0.3s ease
     &__img
       grid-column: 1 / 3
       grid-row: 1 / 3
       align-self: flex-end
+      padding-bottom: 10px
     &__logo-small
       display: none
     &__categories
@@ -89,16 +91,19 @@
         position: absolute
         &:hover
           fill: $primary
+          transition: 0.3s ease
       &-youtube
         fill: #BDBDBD
         position: absolute
         &:hover
           fill: $primary
+          transition: 0.3s ease
       &-instagram
         fill: #BDBDBD
         position: absolute
         &:hover
           fill: $primary
+          transition: 0.3s ease
   &__element
     padding-top: 13px
   &-element
@@ -121,10 +126,10 @@
       font-size: 14px
       line-height: 22px
     &__list
-      padding: 0
-      margin: 22px 0 0 0
+      padding: 23px 0 0 0
+      margin: 0
     &-svg
-      margin-right: 22px
+      margin-right: 19px
     &-map
       fill: #BDBDBD
       &:hover
@@ -135,18 +140,72 @@
         fill: $primary
     &-mail
       fill: #BDBDBD
-      &:hover
-        fill: $primary
     &__item
       list-style: none
       display: flex
       align-items: center
-      margin-bottom: 20px
+      margin-bottom: 23px
       &:nth-child(3)
         margin-bottom: 0
+      &:hover + .footer-element-mail--hover
+        fill: $primary
+        transition: 0.3s ease
     &__links
       display: flex
       align-items: flex-start
+    &__link
+      text-decoration: none
+      color: $footer-link
+      font-weight: 400
+      font-style: normal
+      font-size: 14px
+      line-height: 22px
+      display: flex
+      &--adress
+        &:hover
+          color: $primary
+          transition: 0.3s ease
+      &--mail
+        &:hover
+          color: $primary
+          transition: 0.3s ease
+      &--phone
+        text-decoration: none
+        color: $footer-link
+        font-weight: 400
+        font-style: normal
+        font-size: 14px
+        line-height: 24px
+        display: flex
+        &:hover svg
+          fill: $primary
+          transition: 0.3s ease
+        &--block
+         margin-top: -9px
+        &--span
+          display: block
+        &--business
+          &:hover
+            color: $primary
+            transition: 0.3s ease
+        &--hotline
+          &:hover
+            color: $primary
+            transition: 0.3s ease
+        &--saturday
+          &:hover
+            color: $primary
+            transition: 0.3s ease
+      &--adress
+        &:hover svg
+          fill: $primary
+          transition: 0.3s ease
+      &--mail
+        display: flex
+        align-items: center
+        &:hover svg
+          fill: $primary
+          transition: 0.3s ease
     &__phone
       display: flex
       flex-direction: column
@@ -173,6 +232,9 @@
       font-style: normal
       font-size: 12px
       line-height: 15px
+      &:focus-visible
+        outline: 2px solid $primary
+        outline-offset: 1px
     &-left
       grid-column: 1 / 2
       grid-row: 1 / 2
@@ -191,6 +253,10 @@
       line-height: 15px
       padding-top: 18px
       padding-left: 23px
+      resize: none
+      &:focus-visible
+        outline: 2px solid $primary
+        outline-offset: 1px
     &-footer
       grid-column: 1 / 3
       grid-row: 3 / 4
@@ -213,6 +279,9 @@
       white-space: nowrap
       text-overflow: ellipsis
       max-width: 200px
+      &:hover
+        background-color: $button-hover
+        transition: 0.3s ease
     &-info
       font-weight: 700
       font-style: normal
@@ -245,5 +314,8 @@
       line-height: 15px
       &:hover
         color: $primary
+        transition: 0.3s ease
+    &-img
+      margin-top: -6px
 
   

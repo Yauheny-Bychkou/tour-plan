@@ -42,19 +42,19 @@
       <nav class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu navbar__menu">
-            <li class="navbar-menu__item  navbar-menu__item--mobile--visible">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <a href="#" class="user navbar__user navbar__user--mobile--visible">
-               <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
-               <span class="user__name user__name--light">Nathan</span>
+                <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
+                <span class="user__name user__name--light">Nathan</span>
               </a>
             </li>
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <form action="#" class="search navbar__search navbar__search--mobile--visible">
-            <input type="text" class="search__input" placeholder="Search Location" />
-            <button class="search__button">
-              <img src="img/search.svg" alt="Icon: search" />
-            </button>
-          </form>
+                <input type="text" class="search__input" placeholder="Search Location" />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: search" />
+                </button>
+              </form>
             </li>
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
@@ -83,9 +83,9 @@
       <!-- /.container -->
     </nav>
     <!-- /.breadcrumb -->
-    <section class="hotel">
+    <section class="hotel hotel__wrap">
       <div class="container">
-        <div class="hotel-wrapper hotel__wrapper hotel__wrap">
+        <div class="hotel-wrapper hotel__wrapper">
           <div class="hotel-wrapper__left">
             <div class="hotel-wrapper__stars">
               <img src="img/star.svg" alt="star" />
@@ -178,7 +178,7 @@
             </button>
           </div>
           <!-- /.swiper-container -->
-          <div class="booking">
+          <div class="booking booking__container">
             <div class="booking__view">
               <div class="booking__wrap">
                 <div class="booking__price">
@@ -502,7 +502,7 @@
         <div class="activities-wrapper">
           <div class="card activities__card">
             <img src="img/card-1.jpg" alt="The curious corner of chamarel" class="card__img" />
-            <h3 class="card__title">The curious corner of chamarel</h3>
+            <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
           <div class="card activities__card">
@@ -530,14 +530,14 @@
       <div class="container">
         <div class="footer-container">
           <div class="footer-grid">
-            <div class="footer-grid__img">
+            <a href="#" class="footer-grid__img">
               <img src="img/logo-small.svg" alt="Logo: Best tour plan" class="footer-grid__logo-small" />
               <img src="img/vertical-logo.svg" alt="Logo: Best tour plan" class="footer-grid__logo" />
-            </div>
+            </a>
             <div class="footer-grid__categories">
-              <h3 class="footer-grid__title">All categories</h2>
+              <h3 class="footer-grid__title">All categories</h3>
               <ul class="footer-grid__list">
-                <li class="footer-grid__item"><a href="#" class="footer-grid__link">All deals</a></li>
+                <li class="footer-grid__item"><a href="#" class="footer-grid__link">All Deals</a></li>
                 <li class="footer-grid__item"><a href="#" class="footer-grid__link">Hotels</a></li>
                 <li class="footer-grid__item"><a href="#" class="footer-grid__link">Activities</a></li>
                 <li class="footer-grid__item"><a href="#" class="footer-grid__link">Spa Packages</a></li>
@@ -550,7 +550,7 @@
             </div>
             <!-- /.footer-grid__categories -->
             <div class="footer-grid__information">
-              <h3 class="footer-grid__title">Additional information</h2>
+              <h3 class="footer-grid__title">Additional information</h3>
               <ul class="footer-grid__list">
                 <li class="footer-grid__item"><a href="#" class="footer-grid__link">About Us</a></li>
                 <li class="footer-grid__item"><a href="#" class="footer-grid__link">Contact Us</a></li>
@@ -565,7 +565,7 @@
             </div>
             <!-- /.footer-grid__information -->
             <div class="footer-grid__legal-information">
-              <h3 class="footer-grid__title">Legal information</h2>
+              <h3 class="footer-grid__title">Legal information</h3>
               <ul class="footer-grid__list">
                 <li class="footer-grid__item"><a href="#" class="footer-grid__link">Teams & Conditions</a></li>
                 <li class="footer-grid__item"><a href="#" class="footer-grid__link">Disclaimer</a></li>
@@ -576,7 +576,7 @@
             </div>
             <!-- /.footer-grid__legal-information -->
             <div class="footer-grid__social">
-              <h3 class="footer-grid__title-social">Social Network</h2>
+              <h3 class="footer-grid__title-social">Social Network</h3>
               <div class="footer-grid__icons">
                 <a href="#" class="footer-grid__social-fb">
                   <svg class="footer-grid__social-facebook" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -606,65 +606,81 @@
           <!-- /.footer-grid -->
           <div class="footer-block footer__block">
             <div class="footer-element footer__element">
-              <h3 class="footer-element__title">Contact details</h2>
+              <h3 class="footer-element__title">Contact details</h3>
               <span class="footer-element__description"
                 >Feel free to contact us by phone, email or by our contact form</span
               >
               <ul class="footer-element__list">
                 <li class="footer-element__item">
-                  <svg
-                    class="footer-element-svg footer-element-map"
-                    width="24"
-                    height="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 2C8.13 2 5 5.13 5 9c0 4.17 4.42 9.92 6.24 12.11.4.48 1.13.48 1.53 0C14.58 18.92 19 13.17 19 9c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"
-                    />
-                  </svg>
-                  <a href="#" class="footer-grid__link"
-                    >9748 Blossom Hill Rd undefined Lansing, Idaho 68545 Unated States</a
-                  >
+                  <a href="#" class="footer-element__link--adress footer-element__link">
+                    <svg
+                      class="footer-element-svg footer-element-map"
+                      width="24"
+                      height="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 4.17 4.42 9.92 6.24 12.11.4.48 1.13.48 1.53 0C14.58 18.92 19 13.17 19 9c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"
+                      />
+                    </svg>
+                    <span class="footer-grid__link--span footer-element__link--span"
+                      >9748 Blossom Hill Rd undefined Lansing, Idaho 68545 Unated States</span
+                    >
+                  </a>
                 </li>
                 <li class="footer-element__item footer-element__links">
-                  <svg
-                    class="footer-element-svg footer-element-phone"
-                    width="23"
-                    height="23"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M19.167 10.54h1.916c0-4.915-3.711-8.623-8.634-8.623v1.916c3.893 0 6.718 2.82 6.718 6.708z"
-                    />
-                    <path
-                      d="M12.458 7.667c2.016 0 2.875.86 2.875 2.875h1.917c0-3.091-1.701-4.792-4.792-4.792v1.917zm3.28 5.216a.96.96 0 00-1.333.041l-2.294 2.358c-.552-.105-1.661-.45-2.804-1.59-1.142-1.144-1.488-2.256-1.59-2.805l2.356-2.294a.959.959 0 00.041-1.333l-3.54-3.893a.958.958 0 00-1.334-.084L3.16 5.067a.958.958 0 00-.277.622c-.015.24-.289 5.914 4.112 10.317 3.839 3.838 8.648 4.119 9.972 4.119.194 0 .313-.006.344-.008a.95.95 0 00.621-.279l1.783-2.08a.958.958 0 00-.083-1.333l-3.894-3.542z"
-                    />
-                  </svg>
-                  <div class="footer-element__phone">
-                    <a href="#" class="footer-grid__link">Tel (business hour) : 269 1500</a>
+                  <a href="#" class="footer-element__link--phone footer-element__link">
+                    <svg
+                      class="footer-element-svg footer-element-phone footer-element-phone--hover"
+                      width="23"
+                      height="23"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.167 10.54h1.916c0-4.915-3.711-8.623-8.634-8.623v1.916c3.893 0 6.718 2.82 6.718 6.708z"
+                      />
+                      <path
+                        d="M12.458 7.667c2.016 0 2.875.86 2.875 2.875h1.917c0-3.091-1.701-4.792-4.792-4.792v1.917zm3.28 5.216a.96.96 0 00-1.333.041l-2.294 2.358c-.552-.105-1.661-.45-2.804-1.59-1.142-1.144-1.488-2.256-1.59-2.805l2.356-2.294a.959.959 0 00.041-1.333l-3.54-3.893a.958.958 0 00-1.334-.084L3.16 5.067a.958.958 0 00-.277.622c-.015.24-.289 5.914 4.112 10.317 3.839 3.838 8.648 4.119 9.972 4.119.194 0 .313-.006.344-.008a.95.95 0 00.621-.279l1.783-2.08a.958.958 0 00-.083-1.333l-3.894-3.542z"
+                      />
+                    </svg>
+
+                    <div class="footer-element__link--phone--block">
+                      <span class="footer-element__link--phone--span footer-element__link--phone--business"
+                        >Tel (business hour) : 269 1500</span
+                      >
+                      <span class="footer-element__link--phone--span footer-element__link--phone--hotline"
+                        >Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am - 20:00 pm)</span
+                      >
+                      <span class="footer-element__link--phone--span footer-element__link--phone--saturday"
+                        >Tel (hotline) Saturday: 52-56-61-38 (08:00 am - 14:00 pm)</span
+                      >
+                    </div>
+                  </a>
+                  <!-- /.<a href="#" class="footer-grid__link footer-element__link--top">Tel (business hour) : 269 1500</a>
                     <a href="#" class="footer-grid__link"
                       >Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am - 20:00 pm)</a
                     >
-                    <a href="#" class="footer-grid__link">Tel (hotline) Saturday: 52-56-61-38 (08:00 am - 14:00 pm)</a>
-                  </div>
+                    <a href="#" class="footer-grid__link">Tel (hotline) Saturday: 52-56-61-38 (08:00 am - 14:00 pm)</a> -->
                 </li>
-                <li class="footer-element__item">
-                  <svg
-                    class="footer-element-svg footer-element-mail"
-                    width="20"
-                    height="20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16.667 3.333H3.333c-.916 0-1.658.75-1.658 1.667l-.008 10c0 .917.75 1.667 1.666 1.667h13.334c.916 0 1.666-.75 1.666-1.667V5c0-.917-.75-1.667-1.666-1.667zm-.334 3.542l-5.891 3.683a.843.843 0 01-.884 0L3.667 6.875a.708.708 0 11.75-1.2L10 9.167l5.583-3.492a.708.708 0 11.75 1.2z"
-                    />
-                  </svg>
-                  <a href="#" class="footer-grid__link">cherly.lawson@example.com</a>
+                <li class="footer-element__item footer-element__item--hover">
+                  <a href="#" class="footer-element__link--mail footer-element__link">
+                    <svg
+                      class="footer-element-svg footer-element-mail footer-element-mail--hover"
+                      width="20"
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.667 3.333H3.333c-.916 0-1.658.75-1.658 1.667l-.008 10c0 .917.75 1.667 1.666 1.667h13.334c.916 0 1.666-.75 1.666-1.667V5c0-.917-.75-1.667-1.666-1.667zm-.334 3.542l-5.891 3.683a.843.843 0 01-.884 0L3.667 6.875a.708.708 0 11.75-1.2L10 9.167l5.583-3.492a.708.708 0 11.75 1.2z"
+                      />
+                    </svg>
+                    <span class="footer-element__link--mail--span">cherly.lawson@example.com</span>
+                  </a>
                 </li>
               </ul>
             </div>
             <div class="footer-contacts footer__contacts">
-              <h3 class="footer-grid__title footer-contacts__title">Send us a message</h2>
+              <h3 class="footer-grid__title footer-contacts__title">Send us a message</h3>
               <form action="#" class="footer__form">
                 <input
                   type="text"
@@ -678,15 +694,7 @@
                   required
                   placeholder="Phone Number*"
                 />
-                <textarea
-                  class="footer__form-area"
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  required
-                  placeholder="Message"
-                ></textarea>
+                <textarea class="footer__form-area" cols="30" rows="10" placeholder="Message"></textarea>
                 <div class="footer__form-footer">
                   <button class="button footer__form-button">Send</button>
                   <span class="footer__form-info">* Required Fields</span>
