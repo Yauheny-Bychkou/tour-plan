@@ -116,7 +116,16 @@
     &-slider
       &__item
         max-width: 579px
+      &__button
+        transform: translateY(-12%)
+        &--next
+          right: 0
+        &--prev
+          left: 0
   .newsletter
+    &__wrap
+      padding-top: 96px
+      padding-bottom: 92px
     &__title
       margin-top: -5px
     &__subscribe
@@ -203,6 +212,8 @@
         padding-top: 7px
     &__breadcrumb
       padding-top: 63px
+      &-item
+        margin-right: 12px
       &-list
         margin: -2px
 @media (max-width: 767px)
@@ -223,24 +234,27 @@
         right: 0
         z-index: 99
     &-bottom
-      display: none
       position: fixed
-      left: 0
-      right: 0
+      right: -150%
       bottom: 0
       top: 70px
+      transition: 1s ease
       &--visible
-        display: block
+        right: 0
+        left: 0
     &__menu
       flex-direction: column
       align-items: center
       padding-top: 31px
+      overflow-x: auto
     &-menu
       &__link
         padding: 0 0 20px 0
         &:nth-child(1)
           margin-left: 0
           margin-right: 0
+        &--last
+          padding: 0
       &__item
         &--mobile
           &--visible
@@ -654,3 +668,8 @@
 @media (max-width: 321px)
   .container
     max-width: 310px
+  .navbar
+    &-top
+      height: 70px
+    &__search
+      max-width: 243px
