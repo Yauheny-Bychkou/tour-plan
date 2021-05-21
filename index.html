@@ -407,8 +407,8 @@
             subscribe to our
             <span class="newsletter-title__strong"> Newsletter</span>
           </h2>
-          <form action="#" class="subscribe newsletter__subscribe">
-            <input type="text" class="subscribe__input" required placeholder="Your email address" />
+          <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+            <input type="text" class="subscribe__input" required placeholder="Your email address" name="email" />
             <button class="subscribe__button">Send</button>
           </form>
         </div>
@@ -683,20 +683,22 @@
             </div>
             <div class="footer-contacts footer__contacts">
               <h3 class="footer-grid__title footer-contacts__title">Send us a message</h3>
-              <form action="#" class="footer__form">
+              <form action="send.php" method="POST" class="footer__form">
                 <input
                   type="text"
                   class="input footer__form-input footer__form-left"
                   required
                   placeholder="Your Full Name*"
+                  name="name"
                 />
                 <input
                   type="text"
                   class="input footer__form-input footer__form-right"
                   required
                   placeholder="Phone Number*"
+                  name="phone"
                 />
-                <textarea class="footer__form-area" cols="30" rows="10" placeholder="Message"></textarea>
+                <textarea class="footer__form-area" cols="30" rows="10" placeholder="Message" name="message"></textarea>
                 <div class="footer__form-footer">
                   <button class="button footer__form-button">Send</button>
                   <span class="footer__form-info">* Required Fields</span>
