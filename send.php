@@ -29,6 +29,16 @@ If (!empty($_POST['email']))
     <b>Message:</b> $message<br>
     ";
   } 
+
+  if (!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['email']) && !empty($_POST['message'])) {
+    $body = "
+    <h2>Новое обращение</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br>
+    <b>Еmail:</b> $email<br>
+    <b>Message:</b> $message<br>
+    ";
+  } 
   
 
 // Настройки PHPMailer
