@@ -12,13 +12,24 @@ $email = $_POST['email'];
 
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
-$body = "
-<h2>Новое обращение</h2>
-<b>Еmail:</b> $email<br>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
+
+If (!empty($_POST['email'])) 
+  {
+    $body = "
+    <h2>Новое обращение</h2>
+    <b>Еmail:</b> $email<br>
+    ";
+  } 
+
+  if (!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['message'])) {
+    $body = "
+    <h2>Новое обращение</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br>
+    <b>Message:</b> $message<br>
+    ";
+  } 
+  
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -39,7 +50,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = '375445433672ab@gmail.com'; // Логин на почте
-    $mail->Password   = '5433672Abc'; // Пароль на почте
+    $mail->Password   = '5433672Abcdf'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('375445433672ab@gmail.com', 'Yauheni Bychkou'); // Адрес самой почты и имя отправителя
