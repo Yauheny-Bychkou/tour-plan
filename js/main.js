@@ -64,28 +64,61 @@ $(document).ready(function () {
     document.querySelector("body").classList.toggle("overflow--hidden");
   });
 
+  var closeModalOverlay = $(".modal__overlay");
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
+  closeModalOverlay.on("click", closeModal);
+
+  var modalOutline = $("[data-toggle=outline]");
+  modalOutline.on("click", paintModal);
+  function paintModal() {
+    var modalInput = $(".input");
+    modalInput.addClass("input__outline");
+  }
 
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
+    var modalBody = $("body");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
+    modalBody.addClass("overflow--hidden");
   }
   function closeModal(event) {
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
+    var modalBody = $("body");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
+    modalBody.removeClass("overflow--hidden");
     $(document).on("keyup", function (event) {
       if (event.keyCode == 27) {
         modalOverlay.removeClass("modal__overlay--visible");
         modalDialog.removeClass("modal__dialog--visible");
+        modalBody.removeClass("overflow--hidden");
       }
     });
   }
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "input__error",
+      messages: {
+        name: {
+          required: "This field is required",
+          minlength: "The name must be at least 2 letters long. You only entered 1 letter",
+        },
+        email: {
+          required: "This field is required",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "This field is required",
+        },
+      },
+    });
+  });
+  $("input[type='tel']").mask("+7 (000) 000-0000");
 });

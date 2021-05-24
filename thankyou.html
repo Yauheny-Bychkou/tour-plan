@@ -21,7 +21,7 @@
             <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
           </a>
           <form action="#" class="search navbar__search navbar__search--mobile--hidden">
-            <input type="text" class="search__input" placeholder="Search Location" />
+            <input type="text" class="search__input" required placeholder="Search Location" />
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search" />
             </button>
@@ -89,8 +89,11 @@
       <div class="container">
         <div class="hotel-wrapper hotel__wrapper">
           <div class="hotel-wrapper__left">
-            <h1 class="hotel-name hotel-wrapper__name">Message sent!</h1>
-            <p class="hotel-description hotel__description">Our manager will call you in 5 minutes.</p>
+            <form action="index.html">
+              <h1 class="hotel-name hotel-wrapper__name">Message sent!</h1>
+              <p class="hotel-description hotel__description">Our manager will call you in 5 minutes.</p>
+              <button class="hotel__thankyou">To home</button>
+            </form>
           </div>
           <!-- /.hotel-info -->
         </div>

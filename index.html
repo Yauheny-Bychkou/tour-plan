@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Best tour plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header class="navbar navbar--mobile_fixed">
@@ -21,7 +23,7 @@
             <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
           </a>
           <form action="#" class="search navbar__search navbar__search--mobile--hidden">
-            <input type="text" class="search__input" placeholder="Search Location" />
+            <input type="text" class="search__input" required placeholder="Search Location" />
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search" />
             </button>
@@ -407,7 +409,7 @@
             subscribe to our
             <span class="newsletter-title__strong"> Newsletter</span>
           </h2>
-          <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+          <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
             <input type="text" class="subscribe__input" required placeholder="Your email address" name="email" />
             <button class="subscribe__button">Send</button>
           </form>
@@ -683,24 +685,29 @@
             </div>
             <div class="footer-contacts footer__contacts">
               <h3 class="footer-grid__title footer-contacts__title">Send us a message</h3>
-              <form action="send.php" method="POST" class="footer__form">
-                <input
-                  type="text"
-                  class="input footer__form-input footer__form-left"
-                  required
-                  placeholder="Your Full Name*"
-                  name="name"
-                />
-                <input
-                  type="text"
-                  class="input footer__form-input footer__form-right"
-                  required
-                  placeholder="Phone Number*"
-                  name="phone"
-                />
+              <form action="send.php" method="POST" class="footer__form form">
+                <div>
+                  <input
+                    type="text"
+                    class="input footer__form-input footer__form-left"
+                    required
+                    minlength="2"
+                    placeholder="Your Full Name*"
+                    name="name"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    class="input footer__form-input footer__form-right"
+                    required
+                    placeholder="Phone Number*"
+                    name="phone"
+                  />
+                </div>
                 <textarea class="footer__form-area" cols="30" rows="10" placeholder="Message" name="message"></textarea>
                 <div class="footer__form-footer">
-                  <button class="button footer__form-button">Send</button>
+                  <button data-toggle="outline" class="button footer__form-button">Send</button>
                   <span class="footer__form-info">* Required Fields</span>
                 </div>
               </form>
@@ -736,13 +743,34 @@
           <img src="img/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
-          <input type="text" class="input modal__form-input" required placeholder="Your Full Name*" name="name" />
-          <input type="text" class="input modal__form-input" required placeholder="Phone Number*" name="phone" />
-          <input type="text" class="input modal__form-input" required placeholder="Email*" name="email" />
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__form-input"
+            minlength="2"
+            required
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="tel"
+            data-toggle="outline"
+            class="input modal__form-input"
+            required
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            data-toggle="outline"
+            class="input modal__form-input"
+            required
+            placeholder="Email*"
+            name="email"
+          />
           <textarea class="modal__form-area" cols="30" rows="10" placeholder="Message" name="message"></textarea>
           <div class="modal__form-footer">
-            <button class="modal__form-button">Send</button>
+            <button data-toggle="outline" class="modal__form-button">Send</button>
             <span class="modal__form-info">* Required Fields</span>
           </div>
         </form>
@@ -752,6 +780,8 @@
     <script src="js/parallax.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=44101698-031b-4149-becf-160313e26f63&lang=ru_RU"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

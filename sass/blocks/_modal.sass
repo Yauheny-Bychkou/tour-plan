@@ -33,6 +33,7 @@
       opacity: 1
       transition: 0.3s
       overflow-y: auto
+      max-height: 95vh
   &__close
     position: absolute
     top: 17px
@@ -53,6 +54,7 @@
     margin: auto
     margin-bottom: 15px
   &__form
+    width: 100%
     &-input
       padding: 18px 35px 17px 23px
       border: none
@@ -61,11 +63,13 @@
       font-style: normal
       font-size: 12px
       line-height: 15px
-      margin-bottom: 15px
+      margin-top: 15px
       width: 100%
       &:focus-visible
         outline: 2px solid $primary
         outline-offset: 1px
+      &:nth-child(1)
+        margin-top: 0
     &-area
       border: none
       border-radius: 4px
@@ -80,6 +84,7 @@
       width: 100%
       margin-bottom: 15px
       min-height: 123px
+      margin-top: 15px
       &:focus-visible
         outline: 2px solid $primary
         outline-offset: 1px

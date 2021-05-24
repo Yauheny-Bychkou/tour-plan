@@ -11,17 +11,17 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
 
 If (!empty($_POST['email'])) 
   {
+    $title = "Новая подписка на новости Best Tour Plan";
     $body = "
-    <h2>Новое обращение</h2>
-    <b>Еmail:</b> $email<br>
+    <b>Пользователь с Еmail:</b> $email<b>подписался на новостную рассылку Best Tour Plan</b>
     ";
   } 
 
   if (!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['message'])) {
+    $title = "Новые обращение Best Tour Plan";
     $body = "
     <h2>Новое обращение</h2>
     <b>Name:</b> $name<br>
@@ -31,8 +31,9 @@ If (!empty($_POST['email']))
   } 
 
   if (!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['email']) && !empty($_POST['message'])) {
+    $title = "Новый запрос на дополнительную информацию о отеле";
     $body = "
-    <h2>Новое обращение</h2>
+    <h2>Запрос на дополнительную информацию о отеле</h2>
     <b>Name:</b> $name<br>
     <b>Phone:</b> $phone<br>
     <b>Еmail:</b> $email<br>

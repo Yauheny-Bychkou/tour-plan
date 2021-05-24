@@ -18,6 +18,16 @@ body {
   overflow-y: hidden;
 }
 
+.input__error {
+  color: #EC1F46;
+  font-size: 12px;
+}
+
+.input__outline {
+  outline: 2px solid #EC1F46;
+  outline-offset: 1px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -569,6 +579,26 @@ template {
   border-radius: 3px;
   margin-left: 14px;
   margin-top: 3px;
+}
+
+.hotel__thankyou {
+  background-color: #EC1F46;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 65px;
+  border-radius: 4px;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.hotel__thankyou:hover {
+  background-color: #9c0c27;
 }
 
 .hotel-slider {
@@ -2028,6 +2058,7 @@ template {
 }
 
 .footer__form-input {
+  width: 100%;
   padding: 18px 35px 17px 23px;
   border: none;
   border-radius: 4px;
@@ -2237,6 +2268,7 @@ template {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   overflow-y: auto;
+  max-height: 95vh;
 }
 
 .modal__close {
@@ -2262,6 +2294,10 @@ template {
   margin-bottom: 15px;
 }
 
+.modal__form {
+  width: 100%;
+}
+
 .modal__form-input {
   padding: 18px 35px 17px 23px;
   border: none;
@@ -2270,13 +2306,17 @@ template {
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   width: 100%;
 }
 
 .modal__form-input:focus-visible {
   outline: 2px solid #EC1F46;
   outline-offset: 1px;
+}
+
+.modal__form-input:nth-child(1) {
+  margin-top: 0;
 }
 
 .modal__form-area {
@@ -2293,6 +2333,7 @@ template {
   width: 100%;
   margin-bottom: 15px;
   min-height: 123px;
+  margin-top: 15px;
 }
 
 .modal__form-area:focus-visible {
@@ -2351,6 +2392,9 @@ template {
   }
   .booking__view {
     width: 288px;
+  }
+  .booking__button {
+    padding: 13px 43px;
   }
   .map {
     width: 288px;
@@ -2671,6 +2715,30 @@ template {
   .footer__breadcrumb-list {
     margin: -2px;
   }
+  .modal__dialog {
+    padding: 33px 30px;
+  }
+  .modal__form-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .modal__form-info {
+    margin-bottom: 15px;
+  }
+  .modal__form-button {
+    max-width: 200px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2816,6 +2884,9 @@ template {
   .booking__view {
     width: 265px;
     height: 210px;
+  }
+  .booking__button {
+    padding: 13px 43px;
   }
   .map {
     width: 265px;

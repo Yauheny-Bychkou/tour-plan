@@ -7,6 +7,8 @@
   .booking  
     &__view
       width: 288px
+    &__button
+      padding: 13px 43px
   .map
     width: 288px
   .navbar
@@ -216,6 +218,20 @@
         margin-right: 12px
       &-list
         margin: -2px
+  .modal
+    &__dialog
+      padding: 33px 30px
+    &__form
+      &-footer
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+      &-info
+        margin-bottom: 15px
+      &-button
+        max-width: 200px
+        order: 2
+      
 @media (max-width: 767px)
   body
     padding-top: 70px
@@ -318,6 +334,8 @@
     &__view
       width: 265px
       height: 210px
+    &__button
+      padding: 13px 43px
   .map
     width: 265px
     height: 210px
@@ -647,7 +665,6 @@
         margin-right: 10px
       &-list
         margin-bottom: 17px
-      
 @media (max-width: 420px)
   .hotel
     &-wrapper
