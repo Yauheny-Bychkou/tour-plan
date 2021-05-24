@@ -439,6 +439,12 @@ template {
   display: block;
 }
 
+.navbar-menu__link:hover {
+  color: #EC1F46;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
 .logo {
   width: 177px;
 }
@@ -475,6 +481,12 @@ template {
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
+}
+
+.search__button:hover {
+  background-color: #9c0c27;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .user {
@@ -579,6 +591,11 @@ template {
   border-radius: 3px;
   margin-left: 14px;
   margin-top: 3px;
+}
+
+.hotel-wrapper__raiting {
+  margin-top: -21px;
+  margin-left: -5px;
 }
 
 .hotel__thankyou {
@@ -695,11 +712,6 @@ template {
   background-color: #EC1F46;
   color: #fff;
   border-radius: 4px;
-}
-
-.raiting__icon {
-  margin-top: -21px;
-  margin-left: -5px;
 }
 
 .raiting__text {
@@ -907,10 +919,6 @@ template {
   background-color: #686868;
 }
 
-.packges {
-  display: none;
-}
-
 .packges__block {
   padding-top: 40px;
   padding-bottom: 70px;
@@ -1111,6 +1119,12 @@ template {
   max-width: 125px;
 }
 
+.grid__card-button:hover {
+  background-color: #9c0c27;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
 .grid__card-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1281,9 +1295,14 @@ template {
   max-width: 125px;
 }
 
-.newsletter__wrap {
+.grid__element-button:hover {
+  background-color: #9c0c27;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.newsletter {
   position: relative;
-  padding: 97px 0 88px 0;
 }
 
 .newsletter::before {
@@ -1296,6 +1315,10 @@ template {
   width: 100%;
   height: 100%;
   background-color: rgba(10, 34, 61, 0.8);
+}
+
+.newsletter__wrap {
+  padding: 97px 0 88px 0;
 }
 
 .newsletter__wrapper {
@@ -1940,6 +1963,32 @@ template {
   display: flex;
 }
 
+.footer-element__link-business {
+  display: block;
+}
+
+.footer-element__link-business:hover {
+  color: #EC1F46;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.footer-element__link-saturday {
+  display: block;
+}
+
+.footer-element__link-saturday:hover {
+  color: #EC1F46;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.footer-element__link-hotline:hover {
+  color: #EC1F46;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
 .footer-element__link--adress:hover {
   color: #EC1F46;
   -webkit-transition: 0.3s ease;
@@ -1966,32 +2015,6 @@ template {
 
 .footer-element__link--phone:hover svg {
   fill: #EC1F46;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.footer-element__link--phone--block {
-  margin-top: -9px;
-}
-
-.footer-element__link--phone--span {
-  display: block;
-}
-
-.footer-element__link--phone--business:hover {
-  color: #EC1F46;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.footer-element__link--phone--hotline:hover {
-  color: #EC1F46;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.footer-element__link--phone--saturday:hover {
-  color: #EC1F46;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -2033,6 +2056,17 @@ template {
 
 .footer-contacts__title {
   margin-bottom: 34px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 23px;
+  max-width: 250px;
 }
 
 .footer-block {

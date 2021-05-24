@@ -161,6 +161,20 @@
       font-size: 14px
       line-height: 22px
       display: flex
+      &-business
+        display: block
+        &:hover
+          color: $primary
+          transition: 0.3s ease
+      &-saturday
+        display: block
+        &:hover
+          color: $primary
+          transition: 0.3s ease
+      &-hotline
+        &:hover
+          color: $primary
+          transition: 0.3s ease
       &--adress
         &:hover
           color: $primary
@@ -180,22 +194,7 @@
         &:hover svg
           fill: $primary
           transition: 0.3s ease
-        &--block
-         margin-top: -9px
-        &--span
-          display: block
-        &--business
-          &:hover
-            color: $primary
-            transition: 0.3s ease
-        &--hotline
-          &:hover
-            color: $primary
-            transition: 0.3s ease
-        &--saturday
-          &:hover
-            color: $primary
-            transition: 0.3s ease
+
       &--adress
         &:hover svg
           fill: $primary
@@ -214,6 +213,17 @@
   &-contacts
     &__title
       margin-bottom: 34px
+      font-weight: 700
+      font-style: normal
+      font-size: 18px
+      line-height: 22px
+      text-transform: uppercase
+      margin: 0 0 16px 0
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      max-height: 23px
+      max-width: 250px
   &-block
     display: grid
     grid-template-columns: repeat(2, 1fr)
