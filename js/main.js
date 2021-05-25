@@ -71,11 +71,18 @@ $(document).ready(function () {
   closeModalButton.on("click", closeModal);
   closeModalOverlay.on("click", closeModal);
 
-  var modalOutline = $("[data-toggle=outline]");
+  var modalOutline = $(".modal__form-button");
   modalOutline.on("click", paintModal);
   function paintModal() {
-    var modalInput = $(".input");
+    var modalInput = $(".input__modal");
     modalInput.addClass("input__outline");
+  }
+
+  var footerOutline = $(".footer__form-button");
+  footerOutline.on("click", paintFooter);
+  function paintFooter() {
+    var footerInput = $(".footer__form-input");
+    footerInput.addClass("input__outline");
   }
 
   function openModal() {
@@ -119,6 +126,17 @@ $(document).ready(function () {
         },
       },
     });
+  });
+
+  $(".newsletter__subscribe").validate({
+    errorClass: "input__newsletter",
+    errorElement: "div",
+    messages: {
+      email: {
+        required: "This field is required",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
   });
   $("input[type='tel']").mask("+7 (000) 000-0000");
 });

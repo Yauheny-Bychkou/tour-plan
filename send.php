@@ -9,14 +9,15 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
+$mail = $_POST['mail'];
 
 // Формирование самого письма
 
-If (!empty($_POST['email'])) 
+If (!empty($_POST['mail'])) 
   {
     $title = "Новая подписка на новости Best Tour Plan";
     $body = "
-    <b>Пользователь с Еmail:</b> $email<b>подписался на новостную рассылку Best Tour Plan</b>
+    <b>Пользователь с Еmail:</b> $mail<b> подписался на новостную рассылку Best Tour Plan</b>
     ";
   } 
 

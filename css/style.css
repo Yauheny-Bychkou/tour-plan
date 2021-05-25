@@ -21,6 +21,19 @@ body {
 .input__error {
   color: #EC1F46;
   font-size: 12px;
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.input__newsletter {
+  color: #EC1F46;
+  font-size: 12px;
+}
+
+#mail-error {
+  position: absolute;
+  bottom: 3px;
+  left: 32px;
 }
 
 .input__outline {
@@ -1368,7 +1381,6 @@ template {
 }
 
 .subscribe__input {
-  position: absolute;
   width: 100%;
   height: 100%;
   border: none;
@@ -1378,6 +1390,11 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+}
+
+.subscribe__input:focus {
+  outline: 2px solid #EC1F46;
+  outline-offset: 1px;
 }
 
 .subscribe__button {
@@ -2750,6 +2767,7 @@ template {
     margin: -2px;
   }
   .modal__dialog {
+    width: 90%;
     padding: 33px 30px;
   }
   .modal__form-footer {

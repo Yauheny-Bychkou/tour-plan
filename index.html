@@ -410,8 +410,8 @@
               subscribe to our
               <span class="newsletter-title__strong"> Newsletter</span>
             </h2>
-            <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
-              <input type="text" class="subscribe__input" required placeholder="Your email address" name="email" />
+            <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+              <input type="text" class="subscribe__input" required placeholder="Your email address" name="mail" />
               <button class="subscribe__button">Send</button>
             </form>
           </div>
@@ -710,7 +710,7 @@
                     />
                   </div>
                   <textarea
-                    class="footer__form-area"
+                    class="input__footer footer__form-area"
                     cols="30"
                     rows="10"
                     placeholder="Message"
@@ -760,7 +760,7 @@
         <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
-            class="input modal__form-input"
+            class="input__modal modal__form-input"
             minlength="2"
             required
             placeholder="Your Full Name*"
@@ -769,7 +769,7 @@
           <input
             type="tel"
             data-toggle="outline"
-            class="input modal__form-input"
+            class="input__modal modal__form-input"
             required
             placeholder="Phone Number*"
             name="phone"
@@ -777,7 +777,7 @@
           <input
             type="text"
             data-toggle="outline"
-            class="input modal__form-input"
+            class="input__modal modal__form-input"
             required
             placeholder="Email*"
             name="email"
