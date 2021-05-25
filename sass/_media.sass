@@ -61,7 +61,7 @@
           margin-left: 0
         &-yt
           margin-left: 0
-@media (max-width: 991px)
+@media (max-width: 992px)
 
   .container, .newsletter-wrapper
     max-width: 731px
@@ -76,6 +76,14 @@
         &:nth-child(1)
           margin-right: 12px
           margin-left: 15px
+        &:hover
+          color: $primary
+          transition: 0.3s ease
+  .search
+    &__button
+      &:hover
+        background-color: $button-hover
+        transition: 0.3s ease
   .raiting
     &__icon
       margin-top: -8px
@@ -111,6 +119,17 @@
       padding: 22px 24px
     &__cont
       margin-top: 6px
+    &__tel
+      &:hover svg
+        fill: $primary
+        transition: 0.3s ease
+      &:hover
+        color: $primary
+        transition: 0.3s ease
+    &__button
+      &:hover
+        background-color: $button-hover
+        transition: 0.3s ease
   .map
     width: 340px
   .reviews
@@ -135,6 +154,11 @@
       margin-top: -5px
     &__subscribe
       margin-top: -5px
+  .subscribe
+    &__button
+      &:hover
+        background-color: $button-hover
+        transition: 0.3s ease
   .activities
     &__wrap
       padding-top: 70px
@@ -150,18 +174,31 @@
   .packges
     &__wrapper
       padding-bottom: 25px
+  .card
+    &__button
+      &:hover
+        background-color: $button-hover
+        transition: 0.3s ease
   .grid
     grid-template-columns: repeat(2,1fr)
     grid-template-rows: minmax(0, 500px) 1fr
     max-width: 730px
     &__card
      grid-template-columns: repeat(2,1fr)
+     &-button
+       &:hover
+        background-color: $button-hover
+        transition: 0.3s ease
      &-text
        padding: 20px 43px 30px 30px
     &__element
       width: 350px
       &-content
         height: 100%
+      &-button
+        &:hover
+          background-color: $button-hover
+          transition: 0.3s ease
   .footer
     &-container
       row-gap: 67px
@@ -171,6 +208,10 @@
     &-grid
       grid-template-columns: repeat(12, 1fr)
       grid-template-rows: minmax(0, max-content) repeat(11, 1fr)
+      &__link
+        &:hover
+          color: $primary
+          transition: 0.3s ease
       &__img
         align-self: start
         grid-column: 1 / 5
@@ -199,6 +240,18 @@
         grid-column: 4 / 13
         padding-left: 12px
         padding-top: 12px
+        &-facebook
+          &:hover
+            fill: $primary
+            transition: 0.3s ease
+        &-youtube
+          &:hover
+            fill: $primary
+            transition: 0.3s ease
+        &-instagram
+          &:hover
+            fill: $primary
+            transition: 0.3s ease
       &__title-social
         margin-right: 43px
     &-block
@@ -208,17 +261,60 @@
     &-element
       &__list
         padding-left: 6px
+      &__item
+        &:hover + .footer-element-mail--hover
+          fill: $primary
+          transition: 0.3s ease
+      &__link
+        &--adress
+          &:hover svg
+            fill: $primary
+            transition: 0.3s ease
+          &:hover
+            color: $primary
+            transition: 0.3s ease
+        &--phone
+          &:hover svg
+            fill: $primary
+            transition: 0.3s ease
+        &-business
+          &:hover
+            color: $primary
+            transition: 0.3s ease
+        &-saturday
+          &:hover
+            color: $primary
+            transition: 0.3s ease
+        &-hotline
+          &:hover
+            color: $primary
+            transition: 0.3s ease
+        &--mail
+          &:hover svg
+            fill: $primary
+            transition: 0.3s ease
+          &:hover
+            color: $primary
+            transition: 0.3s ease
     &__element
       padding-top: 0
     &__contacts
       padding-left: 0
     &__form
+      &-button
+        &:hover
+          background-color: $button-hover
+          transition: 0.3s ease
       &-footer
         padding-top: 7px
     &__breadcrumb
       padding-top: 63px
       &-item
         margin-right: 12px
+      &-link
+        &:hover
+          color: $primary
+          transition: 0.3s ease
       &-list
         margin: -2px
   .modal
@@ -226,6 +322,14 @@
       width: 90%
       padding: 33px 30px
     &__form
+      &-input
+        &:focus-visible
+          outline: 2px solid $primary
+          outline-offset: 1px
+      &-area
+        &:focus-visible
+          outline: 2px solid $primary
+          outline-offset: 1px
       &-footer
         flex-direction: column
         justify-content: flex-start
@@ -235,7 +339,9 @@
       &-button
         max-width: 200px
         order: 2
-      
+        &:hover
+          background-color: $button-hover
+          transition: 0.3s ease  
 @media (max-width: 767px)
   body
     padding-top: 70px
