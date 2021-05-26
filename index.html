@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
+      rel="preload"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -123,13 +123,13 @@
                   <img class="swiper-container__image" src="img/slide.jpg" alt="slide" />
                 </div>
                 <div class="swiper-slide hotel-slider__item">
-                  <img class="swiper-container__image" src="img/slide-2.jpg" alt="slide" />
+                  <img class="swiper-container__image" loading="lazy" src="img/slide-2.jpg" alt="slide" />
                 </div>
                 <div class="swiper-slide hotel-slider__item">
-                  <img class="swiper-container__image" src="img/slide-3.jpg" alt="slide" />
+                  <img class="swiper-container__image" loading="lazy" src="img/slide-3.jpg" alt="slide" />
                 </div>
                 <div class="swiper-slide hotel-slider__item">
-                  <img class="swiper-container__image" src="img/slide-4.jpg" alt="slide" />
+                  <img class="swiper-container__image" loading="lazy" src="img/slide-4.jpg" alt="slide" />
                 </div>
                 <div class="swiper-slide hotel-slider__item">
                   <img class="swiper-container__image" src="img/slide-5.jpg" alt="slide" />
@@ -221,7 +221,11 @@
                 </div>
                 <button data-toggle="modal" class="booking__button">View Other Options</button>
               </div>
-              <div id="map" class="map"></div>
+              <div class="maps">
+                <img src="img/yandex-map.jpg" alt="" class="maps__yandex" />
+                <div id="map" class="map"></div>
+              </div>
+              <!-- /.maps -->
             </div>
           </div>
         </div>
@@ -237,9 +241,9 @@
             <h3 class="packges__title">Other Packages</h3>
           </div>
           <div class="grid">
-            <div class="grid__card" data-aos="fade-right">
+            <div class="grid__card" data-aos="fade-up" data-aos-duration="300">
               <div class="grid__card-background">
-                <img src="img/packges-1.jpg" alt="Hotel Blue Haven" class="grid__card-bg" />
+                <img src="img/packges-1.jpg" loading="lazy" alt="Hotel Blue Haven" class="grid__card-bg" />
                 <span class="grid__card-sticker">Flash Offer</span>
               </div>
               <div class="grid__card-text">
@@ -282,9 +286,9 @@
               </div>
             </div>
             <!-- /.grid__card -->
-            <div class="grid__element" data-aos="fade-left">
+            <div class="grid__element" data-aos="fade-up" data-aos-duration="600">
               <div class="grid__element-img">
-                <img src="img/packges-2.jpg" alt="LUX* Belle Mare" class="grid__element-bg" />
+                <img src="img/packges-2.jpg" loading="lazy" alt="LUX* Belle Mare" class="grid__element-bg" />
                 <span class="grid__element-sticker">Flash Offer</span>
               </div>
               <div class="grid__element-content">
@@ -311,9 +315,9 @@
               </div>
             </div>
             <!-- /.grid__element -->
-            <div class="grid__element" data-aos="fade-up-right">
+            <div class="grid__element" data-aos="fade-up" data-aos-duration="300">
               <div class="grid__element-img">
-                <img src="img/packges-3.jpg" alt="LUX* Belle Mare" class="grid__element-bg" />
+                <img src="img/packges-3.jpg" loading="lazy" alt="LUX* Belle Mare" class="grid__element-bg" />
                 <span class="grid__element-sticker">Flash Offer</span>
               </div>
               <div class="grid__element-content">
@@ -339,9 +343,9 @@
                 </div>
               </div>
             </div>
-            <div class="grid__element" data-aos="fade-up">
+            <div class="grid__element" data-aos="fade-up" data-aos-duration="600">
               <div class="grid__element-img">
-                <img src="img/packges-4.jpg" alt="LUX* Belle Mare" class="grid__element-bg" />
+                <img src="img/packges-4.jpg" loading="lazy" alt="LUX* Belle Mare" class="grid__element-bg" />
                 <span class="grid__element-sticker">Flash Offer</span>
               </div>
               <div class="grid__element-content">
@@ -367,9 +371,9 @@
                 </div>
               </div>
             </div>
-            <div class="grid__element" data-aos="fade-up-left">
+            <div class="grid__element" data-aos="fade-up" data-aos-duration="900">
               <div class="grid__element-img">
-                <img src="img/packges-5.jpg" alt="LUX* Belle Mare" class="grid__element-bg" />
+                <img src="img/packges-5.jpg" loading="lazy" alt="LUX* Belle Mare" class="grid__element-bg" />
                 <span class="grid__element-sticker">Flash Offer</span>
               </div>
               <div class="grid__element-content">
@@ -403,19 +407,23 @@
     </section>
 
     <!-- /.other-packges -->
-    <section class="newsletter">
-      <div class="newsletter__wrap" data-parallax="scroll" data-speed="0.8" data-image-src="img/newsletter-bg.jpg">
-        <div class="container">
-          <div class="newsletter-wrapper newsletter__wrapper">
-            <h2 class="newsletter-title newsletter__title">
-              subscribe to our
-              <span class="newsletter-title__strong"> Newsletter</span>
-            </h2>
-            <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-              <input type="text" class="subscribe__input" required placeholder="Your email address" name="mail" />
-              <button class="subscribe__button">Send</button>
-            </form>
-          </div>
+    <section
+      class="newsletter"
+      data-parallax="scroll"
+      data-speed="0.8"
+      loading="lazy"
+      data-image-src="img/newsletter-bg.jpg"
+    >
+      <div class="container">
+        <div class="newsletter-wrapper newsletter__wrapper">
+          <h2 class="newsletter-title newsletter__title">
+            subscribe to our
+            <span class="newsletter-title__strong"> Newsletter</span>
+          </h2>
+          <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+            <input type="text" class="subscribe__input" required placeholder="Your email address" name="mail" />
+            <button class="subscribe__button">Send</button>
+          </form>
         </div>
       </div>
     </section>
@@ -428,7 +436,12 @@
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
-                  <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar" />
+                  <img
+                    src="img/reviews-avatar.jpg"
+                    loading="lazy"
+                    alt="Photo: Megan Fox"
+                    class="reviews-slider__avatar"
+                  />
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__stars">
@@ -456,7 +469,12 @@
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
-                  <img src="img/reviews-avatar-2.jpg" alt="Photo: Alla Kot" class="reviews-slider__avatar" />
+                  <img
+                    src="img/reviews-avatar-2.jpg"
+                    loading="lazy"
+                    alt="Photo: Alla Kot"
+                    class="reviews-slider__avatar"
+                  />
                   <h3 class="reviews-slider__username">Alla Kot</h3>
                   <span class="reviews-slider__date">Stayed 25 Aug, 2021</span>
                   <div class="reviews-slider__stars">
@@ -509,22 +527,22 @@
           <h2 class="activities__title">Other Activities</h2>
           <div class="activities-wrapper">
             <div class="card activities__card" data-aos="fade-up" data-aos-duration="200">
-              <img src="img/card-1.jpg" alt="The curious corner of chamarel" class="card__img" />
+              <img src="img/card-1.jpg" loading="lazy" alt="The curious corner of chamarel" class="card__img" />
               <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
               <button class="card__button">Book Now</button>
             </div>
             <div class="card activities__card" data-aos="fade-up" data-aos-duration="400">
-              <img src="img/card-2.jpg" alt="Gymkhana club golf course" class="card__img" />
+              <img src="img/card-2.jpg" loading="lazy" alt="Gymkhana club golf course" class="card__img" />
               <h3 class="card__title">Gymkhana club golf course</h3>
               <button class="card__button">Book Now</button>
             </div>
             <div class="card activities__card" data-aos="fade-up" data-aos-duration="600">
-              <img src="img/card-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__img" />
+              <img src="img/card-3.jpg" loading="lazy" alt="Tamarind falls hiking trip - full day" class="card__img" />
               <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
               <button class="card__button">Book Now</button>
             </div>
             <div class="card activities__card" data-aos="fade-up" data-aos-duration="800">
-              <img src="img/card-4.jpg" alt="The blue marine discovery quest" class="card__img" />
+              <img src="img/card-4.jpg" loading="lazy" alt="The blue marine discovery quest" class="card__img" />
               <h3 class="card__title">The blue marine discovery quest</h3>
               <button class="card__button">Book Now</button>
             </div>
@@ -537,13 +555,18 @@
     </section>
     <!-- /.activities -->
     <footer class="footer">
-      <div class="footer__wrap">
-        <div class="container">
+      <div class="container">
+        <div class="footer__wrap">
           <div class="footer-container">
             <div class="footer-grid">
               <a href="#" class="footer-grid__img">
-                <img src="img/logo-small.svg" alt="Logo: Best tour plan" class="footer-grid__logo-small" />
-                <img src="img/vertical-logo.svg" alt="Logo: Best tour plan" class="footer-grid__logo" />
+                <img
+                  src="img/logo-small.svg"
+                  loading="lazy"
+                  alt="Logo: Best tour plan"
+                  class="footer-grid__logo-small"
+                />
+                <img src="img/vertical-logo.svg" loading="lazy" alt="Logo: Best tour plan" class="footer-grid__logo" />
               </a>
               <div class="footer-grid__categories">
                 <h3 class="footer-grid__title">All categories</h3>
@@ -569,7 +592,9 @@
                   <li class="footer-grid__item">
                     <a href="#" class="footer-grid__link">Frequently Asked Questions</a>
                   </li>
-                  <li class="footer-grid__item"><a href="#" class="footer-grid__link">Deals.mu loyalty program</a></li>
+                  <li class="footer-grid__item">
+                    <a href="#" class="footer-grid__link">Deals.mu loyalty program</a>
+                  </li>
                   <li class="footer-grid__item">
                     <a href="#" class="footer-grid__link">Promote your Bussiness on BTP</a>
                   </li>
@@ -729,9 +754,7 @@
             <!-- /.footer-block -->
           </div>
           <!-- /.footer-container -->
-        </div>
-        <!-- /.container -->
-        <div class="container">
+
           <div class="footer__wrapper">
             <div class="footer__breadcrumb">
               <ul class="footer__breadcrumb-list">
@@ -743,12 +766,14 @@
                   <a href="#" class="footer__breadcrumb-link">Cancellation policy</a>
                 </li>
               </ul>
-              <img src="img/footer.svg" alt="Icons" class="footer__breadcrumb-img" />
+              <img src="img/footer.svg" alt="Icons" loading="lazy" class="footer__breadcrumb-img" />
             </div>
           </div>
+          <!-- /.footer__wrapper -->
         </div>
+        <!-- /.footer__wrap -->
       </div>
-      <!-- /.footer__wrap -->
+      <!-- /.container -->
     </footer>
     <!-- /.footer -->
     <div class="modal">

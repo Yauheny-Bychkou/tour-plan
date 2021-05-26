@@ -183,8 +183,6 @@
   &__tel
     text-decoration: none
     color: inherit 
-    
-    
   &__phone
     fill: #fff
   &__number
@@ -210,10 +208,21 @@
     overflow: hidden
     text-overflow: ellipsis
     cursor: pointer
-    
 .map
+  display: none
   max-width: 100%
   height: 213px
   border-radius: 10px
   overflow: hidden
   background-color: #686868
+  &__visible
+    display: flex
+.maps
+  &__yandex
+    width: 350px
+    height: 213px
+    border-radius: 10px
+    overflow: hidden
+    object-fit: cover
+    &-hidden
+      display: none

@@ -140,4 +140,13 @@ $(document).ready(function () {
   });
   $("input[type='tel']").mask("+7 (000) 000-0000");
   AOS.init();
+
+  var mapImage = $(".maps__yandex");
+  mapImage.on("mouseenter", paintMap);
+  function paintMap() {
+    var mapYandex = $(".map");
+    mapYandex.addClass("map__visible");
+    var mapBackground = $(".maps__yandex");
+    mapBackground.addClass("maps__yandex-hidden");
+  }
 });
