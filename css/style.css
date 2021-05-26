@@ -419,6 +419,10 @@ template {
   margin-left: 108px;
 }
 
+.navbar__user {
+  margin-right: 3px;
+}
+
 .navbar-bottom {
   background-color: #0A223D;
 }
@@ -587,16 +591,16 @@ template {
 .hotel-wrapper__offer {
   font-size: 10px;
   line-height: 13px;
-  padding: 4px 11px;
+  padding: 4px 10px;
   background-color: #EC1F46;
   color: #fff;
   border-radius: 3px;
-  margin-left: 14px;
-  margin-top: 3px;
+  margin-left: 11px;
+  margin-top: 1px;
 }
 
 .hotel-wrapper__raiting {
-  margin-top: -21px;
+  margin-top: -15px;
   margin-left: -5px;
 }
 
@@ -691,6 +695,7 @@ template {
       flex-basis: 100%;
   font-size: 12px;
   line-height: 15px;
+  letter-spacing: 0.4px;
 }
 
 .hotel__description {
@@ -749,10 +754,11 @@ template {
 .booking__view {
   width: 350px;
   min-height: 210px;
-  padding: 22px 28px;
+  padding: 24px 29px 22px 26px;
   background-color: #0A223D;
   color: #fff;
   border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
 }
 
 .booking__wrap {
@@ -776,7 +782,8 @@ template {
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 28px;
+  letter-spacing: -2px;
 }
 
 .booking__bottom {
@@ -784,6 +791,7 @@ template {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  letter-spacing: 0.2px;
 }
 
 .booking__info {
@@ -794,7 +802,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 13px;
+  padding-top: 8px;
 }
 
 .booking__up {
@@ -817,7 +825,7 @@ template {
 }
 
 .booking__guest {
-  margin-right: 8px;
+  margin-right: 9px;
 }
 
 .booking__room {
@@ -846,7 +854,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 9px;
+  margin-top: 8px;
   margin-bottom: 17px;
 }
 
@@ -859,10 +867,12 @@ template {
 .booking__tel {
   text-decoration: none;
   color: inherit;
+  letter-spacing: 1.1px;
 }
 
 .booking__phone {
   fill: #fff;
+  margin-right: 1px;
 }
 
 .booking__number {
@@ -923,6 +933,10 @@ template {
   display: none;
 }
 
+.packges {
+  display: none;
+}
+
 .packges__block {
   padding-top: 40px;
   padding-bottom: 70px;
@@ -942,7 +956,7 @@ template {
   margin: 0;
   font-weight: 700;
   font-style: normal;
-  font-size: 36px;
+  font-size: 35px;
   line-height: 45px;
   text-transform: uppercase;
 }
@@ -985,16 +999,17 @@ template {
 .grid__card-sticker {
   position: absolute;
   left: 0;
-  top: 28px;
+  top: 25px;
   font-weight: 400;
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
-  padding: 5px 15px;
+  padding: 8px 23px 8px 13px;
   background-color: #EC1F46;
   color: #fff;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  letter-spacing: 0.1px;
 }
 
 .grid__card-text {
@@ -1007,7 +1022,7 @@ template {
           flex-direction: column;
   background-color: #0A223D;
   color: #fff;
-  padding: 37px 21px 30px 43px;
+  padding: 37px 21px 30px 46px;
 }
 
 .grid__card-stars {
@@ -1064,6 +1079,7 @@ template {
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
+  letter-spacing: 0.6px;
 }
 
 .grid__card-middle {
@@ -1100,6 +1116,8 @@ template {
   font-style: normal;
   font-size: 14px;
   line-height: 17px;
+  margin-bottom: 3px;
+  letter-spacing: 0.3px;
 }
 
 .grid__card-price {
@@ -1107,6 +1125,7 @@ template {
   font-style: normal;
   font-size: 24px;
   line-height: 30px;
+  letter-spacing: 0.9px;
 }
 
 .grid__card-button {
@@ -1185,7 +1204,7 @@ template {
 }
 
 .grid__element-title {
-  margin: 0 0 23px 0;
+  margin: 0 0 22px 0;
   font-weight: 700;
   font-style: normal;
   font-size: 18px;
@@ -1200,11 +1219,11 @@ template {
 .grid__element-content {
   background-color: #0A223D;
   color: #fff;
-  padding: 30px 21px 25px 32px;
+  padding: 34px 21px 25px 32px;
 }
 
 .grid__element-icon {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .grid__element-top {
@@ -1226,6 +1245,7 @@ template {
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
+  letter-spacing: 0.6px;
 }
 
 .grid__element-middle {
@@ -1277,10 +1297,12 @@ template {
   font-style: normal;
   font-size: 24px;
   line-height: 30px;
+  margin-top: 5px;
+  letter-spacing: 0.9px;
 }
 
 .grid__element-button {
-  padding: 9px 26px;
+  padding: 10px 29px;
   border-radius: 4px;
   border: none;
   background-color: #EC1F46;
@@ -1313,7 +1335,7 @@ template {
 
 .newsletter__wrapper {
   margin: 0 auto;
-  padding: 97px 0 88px 0;
+  padding: 100px 0 86px 0;
 }
 
 .newsletter-wrapper {
@@ -1651,7 +1673,7 @@ template {
   border: none;
   border-radius: 4px;
   background-color: #EC1F46;
-  padding: 7px 22px;
+  padding: 7px 21px;
   cursor: pointer;
   cursor: pointer;
   overflow: hidden;
@@ -1692,7 +1714,7 @@ template {
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  margin: 0 0 16px 0;
+  margin: 0 0 17px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1717,6 +1739,7 @@ template {
   font-size: 14px;
   line-height: 22px;
   display: block;
+  letter-spacing: 0.2px;
 }
 
 .footer-grid__img {
@@ -1826,7 +1849,7 @@ template {
 }
 
 .footer__element {
-  padding-top: 13px;
+  padding-top: 11px;
 }
 
 .footer-element__title {
@@ -1835,7 +1858,7 @@ template {
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  margin: 0 0 24px 0;
+  margin: 0 0 24px -3px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1849,6 +1872,8 @@ template {
   font-style: normal;
   font-size: 14px;
   line-height: 22px;
+  margin-left: -2px;
+  letter-spacing: 0.2px;
 }
 
 .footer-element__list {
@@ -1858,6 +1883,7 @@ template {
 
 .footer-element-svg {
   margin-right: 19px;
+  margin-left: 1px;
 }
 
 .footer-element-map {
@@ -1880,6 +1906,13 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer-element__item:nth-child(1) {
+  margin-bottom: 23px;
+}
+
+.footer-element__item:nth-child(2) {
   margin-bottom: 23px;
 }
 
@@ -1908,8 +1941,21 @@ template {
   display: flex;
 }
 
+.footer-element__link--adress {
+  letter-spacing: 0.2px;
+}
+
+.footer-element__link-phone {
+  margin-top: -5px;
+}
+
 .footer-element__link-business {
   display: block;
+  letter-spacing: 0.2px;
+}
+
+.footer-element__link-hotline {
+  letter-spacing: 0.3px;
 }
 
 .footer-element__link-saturday {
@@ -1922,10 +1968,14 @@ template {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.footer-element__link-email {
+  letter-spacing: 0.2px;
 }
 
 .footer-element__link--mail {
@@ -1948,7 +1998,7 @@ template {
 }
 
 .footer__contacts {
-  padding-left: 13px;
+  padding-left: 15px;
 }
 
 .footer-contacts__title {
@@ -1958,7 +2008,7 @@ template {
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  margin: 0 0 16px 0;
+  margin: 0 0 32px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2122,7 +2172,8 @@ template {
 
 .footer__breadcrumb-item {
   list-style: none;
-  margin-right: 10px;
+  margin-right: 13px;
+  margin-top: -2px;
 }
 
 .footer__breadcrumb-item:nth-child(3) {
@@ -2136,6 +2187,7 @@ template {
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
+  letter-spacing: 0.2px;
 }
 
 .footer__breadcrumb-img {
@@ -2459,10 +2511,13 @@ template {
   .booking__view {
     width: 340px;
     height: 210px;
-    padding: 22px 24px;
+    padding: 27px 24px;
+  }
+  .booking__middle {
+    line-height: 25px;
   }
   .booking__cont {
-    margin-top: 6px;
+    margin-top: 9px;
   }
   .booking__tel:hover svg {
     fill: #EC1F46;
@@ -2505,15 +2560,14 @@ template {
   .reviews-slider__button--prev {
     left: 0;
   }
-  .newsletter__wrap {
-    padding-top: 96px;
-    padding-bottom: 92px;
+  .newsletter__wrapper {
+    padding: 96px 0 94px 0;
   }
   .newsletter__title {
     margin-top: -5px;
   }
   .newsletter__subscribe {
-    margin-top: -5px;
+    margin-top: -9px;
   }
   .subscribe__button:hover {
     background-color: #9c0c27;
@@ -2735,6 +2789,9 @@ template {
   .footer__contacts {
     padding-left: 0;
   }
+  .footer__form-button {
+    padding: 18px 66px;
+  }
   .footer__form-button:hover {
     background-color: #9c0c27;
     -webkit-transition: 0.3s ease;
@@ -2748,7 +2805,7 @@ template {
     padding-top: 63px;
   }
   .footer__breadcrumb-item {
-    margin-right: 12px;
+    margin-right: 16px;
   }
   .footer__breadcrumb-link:hover {
     color: #EC1F46;
@@ -2903,6 +2960,9 @@ template {
   .hotel-slider {
     width: 100%;
   }
+  .hotel__wrap {
+    padding-top: 19px;
+  }
   .hotel-wrapper__left {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -2920,6 +2980,7 @@ template {
   .hotel-wrapper__stars {
     -ms-flex-preferred-size: 10%;
         flex-basis: 10%;
+    margin-top: -2px;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
@@ -3259,8 +3320,11 @@ template {
   .hotel__wrap {
     padding-bottom: 5px;
   }
+  .hotel__grid {
+    padding-bottom: 32px;
+  }
   .hotel-wrapper__name {
-    margin-top: 12px;
+    margin-top: 10px;
   }
   .hotel-wrapper__stars {
     -ms-flex-preferred-size: 12%;
@@ -3271,6 +3335,7 @@ template {
   }
   .hotel__slider {
     height: 200px;
+    margin-bottom: 20px;
   }
   .hotel-slider__button {
     width: 15px;
@@ -3314,6 +3379,12 @@ template {
   .newsletter-wrapper {
     max-width: 513px;
   }
+  .newsletter__wrapper {
+    padding: 76px 0 85px 0;
+  }
+  .newsletter__subscribe {
+    margin-top: -6px;
+  }
   .newsletter-title__strong {
     font-weight: 300;
     font-style: normal;
@@ -3322,7 +3393,7 @@ template {
     margin-top: 4px;
   }
   .newsletter__title {
-    margin-bottom: 45px;
+    margin-bottom: 44px;
     font-weight: 300;
     font-style: normal;
     font-size: 20px;
@@ -3353,6 +3424,9 @@ template {
   }
   .activities {
     padding: 40px 0 60px 0;
+  }
+  .activities__wrap {
+    padding: 4px 0 0 0;
   }
   .activities__title {
     margin-bottom: 36px;
