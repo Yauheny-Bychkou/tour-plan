@@ -2,11 +2,7 @@
   display: none
   &__block
     padding-top: 40px
-    padding-bottom: 70px
-  &__wrapper
-    display: flex
-    justify-content: center
-    padding-bottom: 65px
+    padding-bottom: 72px
   &__title
     margin: 0
     font-weight: 700
@@ -14,6 +10,8 @@
     font-size: 35px
     line-height: 45px
     text-transform: uppercase
+    text-align: center
+    margin-bottom: 65px
 .grid
   display: grid
   grid-template-columns: repeat(3,1fr)
@@ -69,7 +67,7 @@
       max-width: 170px
     &-description
       margin: 0
-      margin-bottom: 40px
+      margin-bottom: 44px
       text-align: justify
       font-weight: 400
       font-style: normal
@@ -132,7 +130,9 @@
       white-space: nowrap
       text-overflow: ellipsis
       max-width: 125px
-      
+      +hover
+        background-color: $button-hover
+        transition: 0.3s ease
     &-footer
       display: flex
       justify-content: space-between
@@ -240,6 +240,9 @@
       white-space: nowrap
       text-overflow: ellipsis
       max-width: 125px
+      +hover
+        background-color: $button-hover
+        transition: 0.3s ease
 
 
 

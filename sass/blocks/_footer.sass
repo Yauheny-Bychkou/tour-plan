@@ -37,6 +37,9 @@
       line-height: 22px
       display: block
       letter-spacing: 0.2px
+      +hover
+        color: $primary
+        transition: 0.3s ease
     &__img
       grid-column: 1 / 3
       grid-row: 1 / 3
@@ -87,12 +90,21 @@
       &-facebook
         fill: #BDBDBD
         position: absolute
+        +hover
+          fill: $primary
+          transition: 0.3s ease
       &-youtube
         fill: #BDBDBD
-        position: absolute       
+        position: absolute
+        +hover
+          fill: $primary
+          transition: 0.3s ease       
       &-instagram
         fill: #BDBDBD
         position: absolute
+        +hover
+          fill: $primary
+          transition: 0.3s ease
   &__element
     padding-top: 11px
   &-element
@@ -124,21 +136,16 @@
       margin-left: 1px
     &-map
       fill: #BDBDBD
-      
     &-phone
-      fill: #BDBDBD
-      
+      fill: #BDBDBD 
     &-mail
       fill: #BDBDBD
     &__item
       list-style: none
       display: flex
       align-items: center
-      &:nth-child(1)
-        margin-bottom: 23px
-      &:nth-child(2)
-        margin-bottom: 23px
-      &:nth-child(3)
+      margin-bottom: 23px
+      &:last-child
         margin-bottom: 0
     &__links
       display: flex
@@ -175,7 +182,6 @@
       &--mail
         display: flex
         align-items: center
-        
     &__phone
       display: flex
       flex-direction: column
@@ -183,7 +189,6 @@
     padding-left: 15px
   &-contacts
     &__title
-      margin-bottom: 34px
       font-weight: 700
       font-style: normal
       font-size: 18px
@@ -247,7 +252,7 @@
       justify-content: space-between
       padding-top: 10px
     &-button
-      padding: 16px 66px
+      padding: 16px 65px 16px 66px
       color: $light
       font-weight: 700
       font-style: normal
@@ -261,28 +266,29 @@
       white-space: nowrap
       text-overflow: ellipsis
       max-width: 200px
+      +hover
+        background-color: $button-hover
+        transition: 0.3s ease
     &-info
       font-weight: 700
       font-style: normal
       font-size: 12px
       line-height: 15px
-  &__wrapper
-    display: flex
-    justify-content: flex-end
   &__breadcrumb
+    position: relative
     display: flex
     align-items: center
-    justify-content: space-between
     padding-top: 102px
-    width: 696px
     &-list
       display: flex
       padding: 0
-      margin: 0
+      margin-top: 0
+      margin-bottom: 0
+      margin-left: auto
+      margin-right: auto
     &-item
       list-style: none
       margin-right: 13px 
-      margin-top: -2px
       &:nth-child(3)
         margin-right: 0
     &-link
@@ -293,7 +299,11 @@
       font-size: 12px
       line-height: 15px
       letter-spacing: 0.2px
+      +hover
+        color: $primary
+        transition: 0.3s ease
     &-img
       margin-top: -6px
-
-  
+      position: absolute
+      right: 0
+      bottom: 1px

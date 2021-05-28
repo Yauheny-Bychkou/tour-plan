@@ -18,11 +18,11 @@
     &__offer
       font-size: 10px
       line-height: 13px
-      padding: 4px 10px
+      padding: 4px 11px 4px 10px
       background-color: $primary
       color: $light
       border-radius: 3px
-      margin-left: 11px
+      margin-left: 12px
       margin-top: 1px
     &__raiting
       margin-top: -15px
@@ -93,7 +93,7 @@
     flex-basis: 100%
     font-size: 12px
     line-height: 15px
-    letter-spacing: 0.4px
+    letter-spacing: 0.2px
   &__description
     margin: 0
     padding-bottom: 20px
@@ -188,6 +188,7 @@
     text-decoration: none
     color: inherit 
     letter-spacing: 1.1px
+    
   &__phone
     fill: #fff
     margin-right: 1px
@@ -195,11 +196,6 @@
     font-style: normal
     font-size: 18px
     line-height: 24px
-    &:hover + .booking__phone
-      fill: $primary
-      color: $primary
-      transition: 0.3s
-      z-index: 99
   &__button
     width: 100%
     background-color: $primary
@@ -214,6 +210,9 @@
     overflow: hidden
     text-overflow: ellipsis
     cursor: pointer
+    +hover
+      background-color: $button-hover
+      transition: 0.3s ease
 .map
   display: none
   max-width: 100%

@@ -1,4 +1,45 @@
-
+@media (min-width: 992px)
+  .booking
+    &__tel
+      &:hover svg
+        fill: $primary
+        transition: 0.3s ease
+      &:hover
+        color: $primary
+        transition: 0.3s ease
+  .footer
+    &-element
+      &__link
+        &--adress
+          &:hover svg
+            fill: $primary
+            transition: 0.3s ease
+          &:hover
+            color: $primary
+            transition: 0.3s ease
+        &--phone
+          &:hover svg
+            fill: $primary
+            transition: 0.3s ease
+        &-business
+          &:hover
+            color: $primary
+            transition: 0.3s ease
+        &-saturday
+          &:hover
+            color: $primary
+            transition: 0.3s ease
+        &-hotline
+          &:hover
+            color: $primary
+            transition: 0.3s ease
+        &--mail
+          &:hover svg
+            fill: $primary
+            transition: 0.3s ease
+          &:hover
+            color: $primary
+            transition: 0.3s ease
 
 @media (max-width: 1200px)
   .container
@@ -76,25 +117,21 @@
         line-height: 15px
         padding: 22px 0
         &:nth-child(1)
-          margin-right: 12px
-          margin-left: 15px
-        &:hover
-          color: $primary
-          transition: 0.3s ease
-  .search
-    &__button
-      &:hover
-        background-color: $button-hover
-        transition: 0.3s ease
+          margin-right: 11px
+          margin-left: 14px
   .raiting
     &__icon
       margin-top: -8px
   .swiper-wrapper
     max-width: 731px
   .hotel
+    &-wrapper
+      &__offer
+        margin-left: 13px
+        margin-top: 4px
     &__wrap
       padding-top: 16px
-      padding-bottom: 60px
+      padding-bottom: 57px
     &-slider
       max-width: 731px
     &__slider
@@ -119,22 +156,11 @@
     &__view
       width: 340px
       height: 210px
-      padding: 27px 24px
+      padding: 26px 21px 27px 24px
     &__middle
       line-height: 25px
     &__cont
-      margin-top: 9px
-    &__tel
-      &:hover svg
-        fill: $primary
-        transition: 0.3s ease
-      &:hover
-        color: $primary
-        transition: 0.3s ease
-    &__button
-      &:hover
-        background-color: $button-hover
-        transition: 0.3s ease
+      margin-top: 12px
   .map
     width: 340px
     height: 210px
@@ -156,21 +182,19 @@
           right: 0
         &--prev
           left: 0
+      &__text
+        max-height: 140px
+        letter-spacing: 0.2px
   .newsletter
     &__wrapper
-      padding: 96px 0 94px 0
+      padding: 99px 0 91px 0
     &__title
       margin-top: -5px
     &__subscribe
       margin-top: -9px
-  .subscribe
-    &__button
-      &:hover
-        background-color: $button-hover
-        transition: 0.3s ease
   .activities
     &__wrap
-      padding-top: 70px
+      padding-top: 52px
       padding-bottom: 70px
     &-wrapper
       flex-wrap: wrap
@@ -178,49 +202,36 @@
       width: 49%
       height: 255px
       margin-bottom: 20px
+      padding: 24px 26px 24px 29px
       &:nth-last-child(-n+2)
         margin-bottom: 0
-  .packges
-    &__wrapper
-      padding-bottom: 25px
   .card
     &__button
-      &:hover
-        background-color: $button-hover
-        transition: 0.3s ease
+      padding: 7px 20px 7px 21px
+  .packges
+    &__wrapper
+      padding-bottom: 25px   
   .grid
     grid-template-columns: repeat(2,1fr)
     grid-template-rows: minmax(0, 500px) 1fr
     max-width: 730px
     &__card
      grid-template-columns: repeat(2,1fr)
-     &-button
-       &:hover
-        background-color: $button-hover
-        transition: 0.3s ease
      &-text
        padding: 20px 43px 30px 30px
     &__element
       width: 350px
       &-content
         height: 100%
-      &-button
-        &:hover
-          background-color: $button-hover
-          transition: 0.3s ease
   .footer
     &-container
-      row-gap: 67px
+      row-gap: 64px
     &__wrap
       padding-top: 71px
       padding-bottom: 33px
     &-grid
       grid-template-columns: repeat(12, 1fr)
       grid-template-rows: minmax(0, max-content) repeat(11, 1fr)
-      &__link
-        &:hover
-          color: $primary
-          transition: 0.3s ease
       &__img
         align-self: start
         grid-column: 1 / 5
@@ -248,86 +259,42 @@
         grid-row: 1 / 2
         grid-column: 4 / 13
         padding-left: 12px
-        padding-top: 12px
-        &-facebook
-          &:hover
-            fill: $primary
-            transition: 0.3s ease
-        &-youtube
-          &:hover
-            fill: $primary
-            transition: 0.3s ease
-        &-instagram
-          &:hover
-            fill: $primary
-            transition: 0.3s ease
+        padding-top: 7px
       &__title-social
-        margin-right: 43px
+        margin-right: 45px
     &-block
       grid-template-columns: minmax(0, 539px)
       grid-template-rows: repeat(2, minmax(0, max-content))
       row-gap: 59px
     &-element
       &__list
-        padding-left: 6px
+        padding-left: 3px
       &__item
         &:hover + .footer-element-mail--hover
           fill: $primary
           transition: 0.3s ease
-      &__link
-        &--adress
-          &:hover svg
-            fill: $primary
-            transition: 0.3s ease
-          &:hover
-            color: $primary
-            transition: 0.3s ease
-        &--phone
-          &:hover svg
-            fill: $primary
-            transition: 0.3s ease
-        &-business
-          &:hover
-            color: $primary
-            transition: 0.3s ease
-        &-saturday
-          &:hover
-            color: $primary
-            transition: 0.3s ease
-        &-hotline
-          &:hover
-            color: $primary
-            transition: 0.3s ease
-        &--mail
-          &:hover svg
-            fill: $primary
-            transition: 0.3s ease
-          &:hover
-            color: $primary
-            transition: 0.3s ease
     &__element
       padding-top: 0
+    &-contacts
+      &__title
+        margin: 0 0 35px 0
     &__contacts
       padding-left: 0
     &__form
       &-button
-        padding: 18px 66px
-        &:hover
-          background-color: $button-hover
-          transition: 0.3s ease
+        padding: 17px 65px
       &-footer
         padding-top: 7px
     &__breadcrumb
       width: 100%
-      padding-top: 63px
+      padding-top: 61px
+      justify-content: flex-start
       &-item
-        margin-right: 16px
-      &-link
-        &:hover
-          color: $primary
-          transition: 0.3s ease
+        margin-right: 13px
       &-list
-        margin: -2px
+        margin: 0
+      &-img
+        bottom: 0
   .modal
     &__dialog
       width: 90%
@@ -431,7 +398,7 @@
     &-slider
       width: 100%
     &__wrap
-      padding-top: 19px
+      padding-top: 16px
     &-wrapper
       &__left
         justify-content: space-between
@@ -439,7 +406,7 @@
         margin-top: 10px
       &__offer
         order: -1
-        margin-left: 0
+        margin-left: 1px
       &__stars
         flex-basis: 10%
         margin-top: -2px
@@ -485,7 +452,7 @@
   .reviews
     &-slider
       &__item
-        padding: 0 30px 30px
+        padding: 0 30px 36px
         &:after, &:before
          display: none 
       &__button
@@ -586,12 +553,12 @@
           margin-right: 30px
       &__title-social
         margin-right: 0
-        margin-bottom: 22px
+        margin-bottom: 23px
     &-block
       grid-template-columns: 1fr
     &-contacts
       &__title
-        margin-bottom: 15px
+        margin-bottom: 16px
     &__form
       grid-template-columns: 1fr
       grid-template-rows: repeat(4, minmax(0, max-content))
@@ -613,14 +580,13 @@
         align-items: flex-start
       &-info
         order: -1
-        margin-bottom: 15px
+        margin-bottom: 13px
     &__breadcrumb
-      flex-direction: column
       justify-content: flex-start
       align-items: flex-start
-      padding-top: 30px
+      padding-top: 28px
       &-list
-        margin-bottom: 10px
+        margin-bottom: 31px
 @media (max-width: 576px)
   .navbar
     &-top
@@ -676,7 +642,7 @@
     width: 100%
   .newsletter
     &__wrap
-      padding: 76px 6px 83px 6px
+      padding: 76px 6px 84px 6px
     &-wrapper
       max-width: 513px
     &__wrapper
@@ -714,9 +680,12 @@
       &__avatar
         margin-bottom: 8px
       &__text
-        max-height: 252px
+        max-height: 262px
+        text-align: left
+        letter-spacing: 0.3px
+        line-height: 166%
   .activities
-    padding: 40px 0 60px 0
+    padding: 22px 0 60px 0
     &__wrap
       padding: 4px 0 0 0
     &__title
@@ -725,6 +694,7 @@
       line-height: 22px
     &__card
       width: 100%
+      padding: 24px 26px 27px 29px
       &:nth-child(2)
         order: 3
       &:nth-child(3)
@@ -734,10 +704,10 @@
         order: 4
   .card
     &__title
-        margin-bottom: 10px
+        margin-bottom: 15px
         max-width: 200px
     &__button
-      padding: 7px 21px
+      padding: 6px 17px 7px 21px
   .grid
     grid-template-columns: 1fr
     grid-template-rows: repeat(4, 1fr)
@@ -773,13 +743,16 @@
         height: 100%
         padding: 10px 10px 15px 15px
   .footer
+    &__wrap
+      padding-top: 69px
     &-container
       row-gap: 43px
     &-grid
       &__social
         padding-top: 36px
         &-fb
-         margin-right: 34px
+         margin-right: 33px
+         margin-left: 2px
       &__legal-information
         padding-top: 34px
       &__categories
@@ -792,17 +765,17 @@
         width: 38px
         margin-right: 9px
       &__list
-        padding-left: 0
+        padding: 20px 0 0 0
       &__links
-        margin-bottom: 19px
+        margin-bottom: 25px
       &-mail
         &--hover
           margin-right: -9px
     &__breadcrumb
       &-item
-        margin-right: 10px
-      &-list
-        margin-bottom: 17px
+        margin-right: 8px
+      &-img
+        left: 0
 @media (max-width: 420px)
   .hotel
     &-wrapper

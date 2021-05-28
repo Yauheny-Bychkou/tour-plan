@@ -38,6 +38,9 @@
       line-height: 18px
       padding: 31px 0
       display: block
+      +hover
+        color: $primary
+        transition: 0.3s ease
 .logo
   width: 177px
   &__image
@@ -66,7 +69,9 @@
     border: none
     background-color: $primary
     cursor: pointer
-    
+    +hover
+      background-color: $button-hover
+      transition: 0.3s ease
 .user
   display: flex
   align-items: center
